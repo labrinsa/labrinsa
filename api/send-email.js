@@ -1,8 +1,18 @@
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export default async function handler(req, res) {
+    // 0. Initialize Resend inside handler to prevent crash on cold start if key is missing
+    const apiKey = process.env.RESEND_API_KEY;
+    if (!apiKey) {
+        console.error('CRITICAL: RESEND_API_KEY is not defined in environment variables.');
+        return res.status(500).json({
+            error: 'Email service configuration error',
+            details: 'The RESEND_API_KEY is missing. Please add it to Vercel Environment Variables.'
+        });
+    }
+
+    const resend = new Resend(apiKey);
+
     if (req.method !== 'POST') {
         return res.status(405).json({ error: 'Method not allowed' });
     }
