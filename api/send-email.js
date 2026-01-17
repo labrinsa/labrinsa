@@ -29,7 +29,7 @@ export default async function handler(req, res) {
         return res.status(400).json({ error: 'Missing required fields' });
     }
 
-    const DEST_EMAIL = 'sjhesua@gmail.com';
+    const DEST_EMAIL = 'proyectolabrinsa@outlook.com';
 
     const productListHtml = quoteItems.map(item =>
         `<li><strong>${item.name}</strong> - Cantidad: ${item.quantity}</li>`
