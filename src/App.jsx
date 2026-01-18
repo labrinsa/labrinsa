@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect } from 'react'
 import { BrowserRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { UserProvider } from './context/UserContext';
 import { QuoteProvider } from './context/QuoteContext';
@@ -9,18 +9,32 @@ import Footer from './components/common/Footer';
 import ProductDetail from './app/products/ProductDetail';
 import QuotePage from './app/quote/QuotePage';
 import './App.css'
+import Contact from './app/contact';
+import About from './app/about';
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function AppContent() {
 
   return (
     <div className="App">
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/products/:id" element={<ProductDetail />} />
         <Route path="/quote" element={<QuotePage />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Footer />

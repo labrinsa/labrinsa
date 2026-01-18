@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -32,10 +33,10 @@ const Footer = () => {
                                 Enlaces rápidos
                             </h2>
                             <ul className="space-y-3">
-                                <li><a href="#" className="hover:text-red-600 transition-colors duration-300">Inicio</a></li>
-                                <li><a href="#" className="hover:text-red-600 transition-colors duration-300">Productos</a></li>
-                                <li><a href="#" className="hover:text-red-600 transition-colors duration-300">Nosotros</a></li>
-                                <li><a href="#" className="hover:text-red-600 transition-colors duration-300">Contáctenos</a></li>
+                                <li><NavLink to="/" className="hover:text-red-600 transition-colors duration-300">Inicio</NavLink></li>
+                                <li><NavLink to="/products" className="hover:text-red-600 transition-colors duration-300">Productos</NavLink></li>
+                                <li><NavLink to="/about" className="hover:text-red-600 transition-colors duration-300">Nosotros</NavLink></li>
+                                <li><NavLink to="/contact" className="hover:text-red-600 transition-colors duration-300">Contáctenos</NavLink></li>
                             </ul>
                         </div>
 

@@ -49,8 +49,22 @@ export default function Navbar() {
                     >
                         Productos
                     </NavLink>
-                    <a href="#" className="text-gray-500 hover:text-gray-700 transition-colors text-sm font-medium">Nosotros</a>
-                    <a href="#" className="text-gray-500 hover:text-gray-700 transition-colors text-sm font-medium">Contáctenos</a>
+                    <NavLink
+                        to="/about"
+                        className={({ isActive }) =>
+                            `transition-colors text-sm ${isActive ? 'text-gray-900 font-bold hover:text-red-600' : 'text-gray-400 font-medium hover:text-gray-600'}`
+                        }
+                    >
+                        Nosotros
+                    </NavLink>
+                    <NavLink
+                        to="/contact"
+                        className={({ isActive }) =>
+                            `transition-colors text-sm ${isActive ? 'text-gray-900 font-bold hover:text-red-600' : 'text-gray-400 font-medium hover:text-gray-600'}`
+                        }
+                    >
+                        Contáctenos
+                    </NavLink>
 
                     <NavLink
                         to="/quote"
@@ -181,8 +195,24 @@ export default function Navbar() {
                         >
                             Productos
                         </NavLink>
-                        <a href="#" className="text-gray-600 hover:text-red-600 font-medium text-lg border-b border-gray-100 pb-2">Nosotros</a>
-                        <a href="#" className="text-gray-600 hover:text-red-600 font-medium text-lg border-b border-gray-100 pb-2">Contáctenos</a>
+                        <NavLink
+                            to="/about"
+                            onClick={() => setIsMenuOpen(false)}
+                            className={({ isActive }) =>
+                                `hover:text-red-600 text-lg border-b border-gray-100 pb-2 ${isActive ? 'text-gray-900 font-bold' : 'text-gray-600 font-medium'}`
+                            }
+                        >
+                            Nosotros
+                        </NavLink>
+                        <NavLink
+                            to="/contact"
+                            onClick={() => setIsMenuOpen(false)}
+                            className={({ isActive }) =>
+                                `hover:text-red-600 text-lg border-b border-gray-100 pb-2 ${isActive ? 'text-gray-900 font-bold' : 'text-gray-600 font-medium'}`
+                            }
+                        >
+                            Contáctenos
+                        </NavLink>
                         <NavLink
                             to="/quote"
                             onClick={() => setIsMenuOpen(false)}

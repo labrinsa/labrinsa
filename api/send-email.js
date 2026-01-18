@@ -17,7 +17,7 @@ export default async function handler(req, res) {
         return res.status(405).json({ error: 'Method not allowed' });
     }
 
-    const { name, email, message, quoteItems, honeypot } = req.body;
+    const { name, email, message, quoteItems, subject, honeypot } = req.body;
 
     // 1. Honeypot check
     if (honeypot) {
@@ -25,33 +25,43 @@ export default async function handler(req, res) {
     }
 
     // 2. Validation
-    if (!name || !email || !quoteItems || !Array.isArray(quoteItems) || quoteItems.length === 0) {
+    if (!name || !email) {
         return res.status(400).json({ error: 'Missing required fields' });
+    }
+
+    const isQuote = quoteItems && Array.isArray(quoteItems) && quoteItems.length > 0;
+
+    if (!isQuote && !subject) {
+        return res.status(400).json({ error: 'Missing required fields: quoteItems or subject' });
     }
 
     const DEST_EMAIL = 'proyectolabrinsa@outlook.com';
 
-    const productListHtml = quoteItems.map(item =>
-        `<li><strong>${item.name}</strong> - Cantidad: ${item.quantity}</li>`
-    ).join('');
+    let productListHtml = '';
+    if (isQuote) {
+        productListHtml = `
+            <h3>Productos Sugeridos:</h3>
+            <ul>
+                ${quoteItems.map(item => `<li><strong>${item.name}</strong> - Cantidad: ${item.quantity}</li>`).join('')}
+            </ul>
+            <hr />
+        `;
+    }
 
     try {
         const { data, error } = await resend.emails.send({
             from: 'Solicitudes Labrinsa <onboarding@resend.dev>', // Change to your verified domain in production
             to: [DEST_EMAIL],
-            subject: `Nuevo Presupuesto: ${name}`,
+            subject: isQuote ? `Nuevo Presupuesto: ${name}` : `Contacto: ${subject} - ${name}`,
             reply_to: email,
             html: `
-        <h2>Nueva Solicitud de Presupuesto</h2>
+        <h2>${isQuote ? 'Nueva Solicitud de Presupuesto' : 'Nuevo Mensaje de Contacto'}</h2>
         <p><strong>Nombre:</strong> ${name}</p>
         <p><strong>Correo:</strong> ${email}</p>
+        ${!isQuote ? `<p><strong>Asunto:</strong> ${subject}</p>` : ''}
         <hr />
-        <h3>Productos:</h3>
-        <ul>
-          ${productListHtml}
-        </ul>
-        <hr />
-        <p><strong>Mensaje adicional:</strong></p>
+        ${productListHtml}
+        <p><strong>Mensaje:</strong></p>
         <p>${message || 'Sin mensaje adicional.'}</p>
       `,
         });
