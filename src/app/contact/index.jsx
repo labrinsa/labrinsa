@@ -1,81 +1,7 @@
-import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Send, Loader2, AlertCircle, CheckCircle } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 
 const ContactPage = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
-        honeypot: ''
-    });
-    const [status, setStatus] = useState('idle'); // idle, loading, success, error
-    const [errorMessage, setErrorMessage] = useState('');
-
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData(prev => ({ ...prev, [name]: value }));
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setStatus('loading');
-        setErrorMessage('');
-
-        try {
-            const response = await fetch('/api/send-email', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
-
-            const result = await response.json();
-
-            if (response.ok) {
-                setStatus('success');
-                setFormData({
-                    name: '',
-                    email: '',
-                    subject: '',
-                    message: '',
-                    honeypot: ''
-                });
-            } else {
-                setStatus('error');
-                setErrorMessage(result.error || 'Hubo un error al enviar tu mensaje. Por favor intenta de nuevo.');
-            }
-        } catch (error) {
-            console.error('Error sending message:', error);
-            setStatus('error');
-            setErrorMessage('No se pudo conectar con el servidor. Revisa tu conexión.');
-        }
-    };
-
-    if (status === 'success') {
-        return (
-            <div className="min-h-[70vh] bg-gray-50 flex flex-col items-center justify-center p-6 text-center">
-                <div className="bg-white p-12 rounded-3xl shadow-sm border border-green-100 max-w-lg">
-                    <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 text-green-600">
-                        <CheckCircle size={40} />
-                    </div>
-                    <h2 className="text-3xl font-bold text-gray-900 mb-4">¡Mensaje Enviado!</h2>
-                    <p className="text-gray-600 mb-8">
-                        Gracias por contactarnos. Hemos recibido tu mensaje correctamente y nuestro equipo te responderá a la brevedad posible.
-                    </p>
-                    <button
-                        onClick={() => setStatus('idle')}
-                        className="bg-[#e3342f] text-white px-8 py-3 rounded-full font-bold hover:bg-red-700 transition-colors shadow-lg inline-block"
-                    >
-                        Enviar otro mensaje
-                    </button>
-                </div>
-            </div>
-        );
-    }
-
     return (
         <div className="bg-gray-50 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
@@ -119,28 +45,12 @@ const ContactPage = () => {
 
                     {/* Columna Derecha: Formulario de Contacto */}
                     <div className="bg-white p-8 shadow-sm border border-gray-100">
-                        <form onSubmit={handleSubmit} className="space-y-4">
-                            {/* Honeypot field */}
-                            <div className="hidden">
-                                <input
-                                    type="text"
-                                    name="honeypot"
-                                    value={formData.honeypot}
-                                    onChange={handleChange}
-                                    tabIndex="-1"
-                                    autoComplete="off"
-                                />
-                            </div>
-
+                        <form className="space-y-4">
                             <div>
                                 <label className="block text-sm font-bold text-gray-700 mb-1">Nombre *</label>
                                 <input
                                     type="text"
-                                    name="name"
-                                    value={formData.name}
-                                    onChange={handleChange}
-                                    disabled={status === 'loading'}
-                                    className="w-full border border-gray-300 p-2 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all disabled:bg-gray-50"
+                                    className="w-full border border-gray-300 p-2 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all"
                                     required
                                 />
                             </div>
@@ -148,11 +58,7 @@ const ContactPage = () => {
                                 <label className="block text-sm font-bold text-gray-700 mb-1">Correo electrónico *</label>
                                 <input
                                     type="email"
-                                    name="email"
-                                    value={formData.email}
-                                    onChange={handleChange}
-                                    disabled={status === 'loading'}
-                                    className="w-full border border-gray-300 p-2 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all disabled:bg-gray-50"
+                                    className="w-full border border-gray-300 p-2 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all"
                                     required
                                 />
                             </div>
@@ -160,50 +66,23 @@ const ContactPage = () => {
                                 <label className="block text-sm font-bold text-gray-700 mb-1">Asunto *</label>
                                 <input
                                     type="text"
-                                    name="subject"
-                                    value={formData.subject}
-                                    onChange={handleChange}
-                                    disabled={status === 'loading'}
-                                    className="w-full border border-gray-300 p-2 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all disabled:bg-gray-50"
+                                    className="w-full border border-gray-300 p-2 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all"
                                     required
                                 />
                             </div>
                             <div>
                                 <label className="block text-sm font-bold text-gray-700 mb-1">Mensaje *</label>
                                 <textarea
-                                    name="message"
-                                    value={formData.message}
-                                    onChange={handleChange}
-                                    disabled={status === 'loading'}
                                     rows="4"
-                                    className="w-full border border-gray-300 p-2 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all disabled:bg-gray-50 bg-white"
+                                    className="w-full border border-gray-300 p-2 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all"
                                     required
                                 ></textarea>
                             </div>
-
-                            {status === 'error' && (
-                                <div className="flex items-start gap-2 text-red-600 bg-red-50 p-4 rounded text-sm mb-4">
-                                    <AlertCircle size={18} className="flex-shrink-0 mt-0.5" />
-                                    <p>{errorMessage}</p>
-                                </div>
-                            )}
-
                             <button
                                 type="submit"
-                                disabled={status === 'loading'}
-                                className="bg-[#e3342f] text-white font-bold py-3 px-8 rounded-full hover:bg-red-700 transition-colors shadow-md flex items-center gap-2 disabled:bg-gray-400 disabled:cursor-not-allowed"
+                                className="bg-[#e3342f] text-white font-bold py-3 px-8 rounded-full hover:bg-red-700 transition-colors shadow-md"
                             >
-                                {status === 'loading' ? (
-                                    <>
-                                        <Loader2 className="animate-spin w-5 h-5" />
-                                        Enviando...
-                                    </>
-                                ) : (
-                                    <>
-                                        <Send className="w-5 h-5" />
-                                        Enviar
-                                    </>
-                                )}
+                                Enviar
                             </button>
                         </form>
                     </div>
