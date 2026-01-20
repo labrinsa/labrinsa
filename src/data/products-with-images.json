@@ -478,5 +478,15 @@
     "pdfUrl": "https://labrinsa.com/wp-content/uploads/2020/08/Ficha-Yoduro-de-Sodio-al-24-2.pdf",
     "localPdfPath": "/pdfs/yoduro-de-sodio-al-24-100ml.pdf",
     "localImagePath": "/images/products/yoduro-de-sodio-al-24-100ml.jpg"
+  },
+  {
+    "name": "bovistrep-inyectable",
+    "url": "",
+    "image": "/images/products/bovistrep-inyectable.jpg",
+    "category": "Antibiótico inyectable",
+    "description": "Cada ML contiene:\nFlorfenicol 200 mg\nTilosina Tartrato 220 mg\nBromhexina HCl 5 MG\n\nIndicaciones:\nCombinacion antibiótica para el tratamiento de enfermedades respiratorias producidas por bacterias sensibles al Florfenicol y a la Tilosina con efecto expectorante broncopulmonar y mucolitico.\n\nIndicado en casos de neumonías, pleuroneumonia, pasteurelosis, bronquitis, traqueobronquitis, neumonía enzootica y rinitis atrofica.\n\nDosis: Bovinos, bufalinos y porcinos: 1 ml por cada 20 Kg de peso vivo. Repetir la aplicación a las 48 horas o según criterio del médico veterinario.\n\nVia de administración: Intramuscular profunda. No administrar más de 20 ml por punto de inyección.\n\nEmpaque: 28 unidades\n\nPrecio: 14.17$",
+    "pdfUrl": "",
+    "localPdfPath": "/pdfs/bovistrep-inyectable.pdf",
+    "localImagePath": "/images/products/bovistrep-inyectable.jpg"
   }
 ]

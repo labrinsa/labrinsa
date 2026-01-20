@@ -11,8 +11,8 @@ const ContactPage = () => {
 
                     {/* Columna Izquierda: Tarjetas de Información */}
                     <div className="space-y-6">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            {/* Card Teléfono */}
+                        <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
+                            {/* Card Teléfono 
                             <div className="bg-white p-8 shadow-sm border border-gray-100 flex flex-col items-center text-center">
                                 <div className="bg-red-50 p-3 rounded-full mb-4">
                                     <Phone className="text-red-600 w-6 h-6" />
@@ -20,14 +20,14 @@ const ContactPage = () => {
                                 <p className="text-gray-600 font-medium">(0261) 736 2383</p>
                                 <p className="text-gray-600 font-medium">(0261) 717 0689</p>
                             </div>
-
+                                */}
                             {/* Card Email */}
                             <div className="bg-white p-8 shadow-sm border border-gray-100 flex flex-col items-center text-center">
                                 <div className="bg-red-50 p-3 rounded-full mb-4">
                                     <Mail className="text-red-600 w-6 h-6" />
                                 </div>
                                 <a href="mailto:info@labrinsa.com" className="text-gray-600 font-medium hover:text-red-600 transition-colors">
-                                    info@labrinsa.com
+                                    labrin.atencionalcliente@gmail.com
                                 </a>
                             </div>
                         </div>

@@ -47,9 +47,11 @@ const Footer = () => {
                             </h2>
                             <div className="text-[#666] leading-[1.8] space-y-1">
                                 <p>Av. 59, Nº. 140-535, Zona industrial primera etapa, Maracaibo</p>
-                                <p className="hover:text-red-600 cursor-pointer transition-colors">info@labrinsa.com</p>
+                                <p className="hover:text-red-600 cursor-pointer transition-colors">labrin.atencionalcliente@gmail.com</p>
+                                {/*  
                                 <p>(0261) 736 2383</p>
                                 <p>(0261) 717 0689</p>
+                                */}
                             </div>
                         </div>
 

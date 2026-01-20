@@ -10,7 +10,8 @@ export const categories = [
     "Pomada tópica",
     "Antiséptico inyectable",
     "Antibiótico oral",
-    "Antiséptico tópico"
+    "Antiséptico tópico",
+    "Solución Ótica"
 ];
 
 export const products = [
@@ -1814,5 +1815,75 @@ export const products = [
         ],
         "pdfPath": "/pdfs/yoduro-de-sodio-al-24-100ml.pdf",
         "originalUrl": "https://labrinsa.com/productos-jhesua/antiseptico-inyectable/yoduro-de-sodio-al-24-100ml/"
+    },
+    {
+        "id": 49,
+        "name": "BOVISTREP Inyectable",
+        "image": "/images/products/bovistrep-inyectable.png",
+        "category": "Antibiótico inyectable",
+        "description": "Cada ML contiene:\nFlorfenicol 200 mg\nTilosina Tartrato 220 mg\nBromhexina HCl 5 MG\n\nIndicaciones:\nCombinacion antibiótica para el tratamiento de enfermedades respiratorias producidas por bacterias sensibles al Florfenicol y a la Tilosina con efecto expectorante broncopulmonar y mucolitico.\n\nIndicado en casos de neumonías, pleuroneumonia, pasteurelosis, bronquitis, traqueobronquitis, neumonía enzootica y rinitis atrofica.\n\nDosis: Bovinos, bufalinos y porcinos: 1 ml por cada 20 Kg de peso vivo. Repetir la aplicación a las 48 horas o según criterio del médico veterinario.\n\nVia de administración: Intramuscular profunda. No administrar más de 20 ml por punto de inyección.\n\nEmpaque: 28 unidades",
+        "composition": [
+            {
+                "name": "Florfenicol",
+                "quantity": "200 mg"
+            },
+            {
+                "name": "Tilosina Tartrato",
+                "quantity": "220 mg"
+            },
+            {
+                "name": "Bromhexina HCl",
+                "quantity": "5 MG"
+            }
+        ],
+        "indications": [
+            "Combinacion antibiótica para el tratamiento de enfermedades respiratorias producidas por bacterias sensibles al Florfenicol y a la Tilosina con efecto expectorante broncopulmonar y mucolitico.",
+            "Indicado en casos de neumonías, pleuroneumonia, pasteurelosis, bronquitis, traqueobronquitis, neumonía enzootica y rinitis atrofica."
+        ],
+        "dosage": "Bovinos, bufalinos y porcinos: 1 ml por cada 20 Kg de peso vivo. Repetir la aplicación a las 48 horas o según criterio del médico veterinario.",
+        "administration": "Intramuscular profunda. No administrar más de 20 ml por punto de inyección.",
+        "package": "28 unidades",
+        "warnings": [
+            "Almacenar en lugar fresco y al abrigo de la luz.",
+            "Manténgase fuera del alcance de los niños.",
+            "Venta bajo prescripción del Médico Veterinario."
+        ],
+        "pdfPath": "/pdfs/bovistrep-inyectable.pdf",
+        "originalUrl": ""
+    },
+    {
+        "id": 50,
+        "name": "OTIBRIN",
+        "image": "/images/products/otibrin.png",
+        "category": "Solución Ótica",
+        "description": "Otibrin está indicado para el tratamiento de la otitis externa causada por infecciones de bacterias sensibles al Florfenicol y hongos sensibles a la Terbinafina.",
+        "composition": [
+            {
+                "name": "Florfenicol",
+                "quantity": "16.7 mg"
+            },
+            {
+                "name": "Terbinafina HCl",
+                "quantity": "16.7 mg"
+            },
+            {
+                "name": "Prednisolona Acetato",
+                "quantity": "2.2 mg"
+            }
+        ],
+        "indications": [
+            "Tratamiento de la otitis externa causada por infecciones de bacterias sensibles al Florfenicol y hongos sensibles a la Terbinafina."
+        ],
+        "dosage": "Aplicar vía Otica 1 ml en cada oído y repetir la aplicación a los 7 días a criterio del Médico Veterinario.",
+        "administration": "Vía Ótica",
+        "presentation": "Caja que contiene 2 unidades",
+        "package": "25 cajas (50 unidades en total)",
+        "warnings": [
+            "Almacenar en lugar fresco y al abrigo de la luz.",
+            "Manténgase fuera del alcance de los niños.",
+            "Venta bajo prescripción del Médico Veterinario."
+        ],
+        "pdfPath": "/pdfs/otibrin.pdf",
+        "originalUrl": ""
     }
 ];

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 
 // Importar estilos de Swiper
 import 'swiper/css';
@@ -15,20 +16,23 @@ const HeroSlider = () => {
             title: 'Laboratorios Rincón S.A.',
             subtitle: 'La solución a tus necesidades veterinarias',
             buttonText: 'Catálogo',
+            link: '/products',
         },
         {
             id: 2,
             image: 'pc.jpg',
-            title: 'Innovación Ganadera',
-            subtitle: 'Comprometidos con la salud animal en todo el país',
-            buttonText: 'Productos',
+            title: 'Contáctenos',
+            subtitle: 'Comuníquese con nosotros de la forma que más le convenga​',
+            buttonText: 'Contactar',
+            link: '/contact',
         },
         {
             id: 3,
             image: 'quienes.jpg',
-            title: 'Innovación Ganadera',
-            subtitle: 'Comprometidos con la salud animal en todo el país',
-            buttonText: 'Productos',
+            title: '¿Quiénes somos?',
+            subtitle: 'Laboratorios Rincón sucesora de Laboratorio Esteva la cual fue adquirida por el Dr. Temístocles Rincón Martínez en el año 1945',
+            buttonText: 'Saber más',
+            link: '/about',
         },
     ];
 
@@ -66,21 +70,23 @@ const HeroSlider = () => {
                                 <p className="text-white text-lg md:text-xl mb-8 font-light italic">
                                     {slide.subtitle}
                                 </p>
-                                <button className="bg-[#d32f2f] hover:bg-red-700 text-white font-medium py-3 px-8 rounded-full w-fit transition-all transform hover:scale-105 active:scale-95 shadow-lg">
-                                    {slide.buttonText}
-                                </button>
+                                <Link to={slide.link}>
+                                    <button className="cursor-pointer bg-[#d32f2f] hover:bg-red-700 text-white font-medium py-3 px-8 rounded-full w-fit transition-all transform hover:scale-105 active:scale-95 shadow-lg">
+                                        {slide.buttonText}
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </SwiperSlide>
                 ))}
 
                 {/* Flechas Personalizadas (Estilo minimalista de la imagen) */}
-                <button className="button-prev absolute left-4 top-1/2 -translate-y-1/2 z-30 text-white/70 hover:text-white transition-opacity">
+                <button className="button-prev cursor-pointer absolute left-4 top-1/2 -translate-y-1/2 z-30 text-white/70 hover:text-white transition-opacity">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
                     </svg>
                 </button>
-                <button className="button-next absolute right-4 top-1/2 -translate-y-1/2 z-30 text-white/70 hover:text-white transition-opacity">
+                <button className="button-next cursor-pointer absolute right-4 top-1/2 -translate-y-1/2 z-30 text-white/70 hover:text-white transition-opacity">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                     </svg>

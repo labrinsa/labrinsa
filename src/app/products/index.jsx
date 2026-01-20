@@ -96,7 +96,7 @@ const ProductsPage = () => {
                                     <button
                                         key={pageNum}
                                         onClick={() => setCurrentPage(pageNum)}
-                                        className={`w-8 h-8 flex items-center justify-center rounded-full text-sm font-bold transition-all
+                                        className={`cursor-pointer w-8 h-8 flex items-center justify-center rounded-full text-sm font-bold transition-all
                                             ${isActive
                                                 ? 'bg-[#e63946] text-white shadow-md scale-110'
                                                 : 'text-gray-400 hover:text-red-600'

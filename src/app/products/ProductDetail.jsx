@@ -118,7 +118,7 @@ const ProductDetail = () => {
                                     download
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-black font-bold inline-flex items-center hover:text-red-600 transition-colors underline underline-offset-4"
+                                    className="cursor-pointer text-black font-bold inline-flex items-center hover:text-red-600 transition-colors underline underline-offset-4"
                                 >
                                     Descargar ficha técnica
                                 </a>
@@ -129,7 +129,7 @@ const ProductDetail = () => {
                         <div className="pt-6">
                             <button
                                 onClick={handleAddToQuote}
-                                className={`flex items-center justify-center gap-2 text-white px-8 py-3 rounded-full font-bold transition-all shadow-lg ${added ? 'bg-green-600' : 'bg-[#005fa3] hover:bg-[#004a80]'
+                                className={`cursor-pointer flex items-center justify-center gap-2 text-white px-8 py-3 rounded-full font-bold transition-all shadow-lg ${added ? 'bg-green-600' : 'bg-[#005fa3] hover:bg-[#004a80]'
                                     }`}
                             >
                                 {added ? (
