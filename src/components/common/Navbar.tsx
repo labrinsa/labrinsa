@@ -13,13 +13,14 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto flex items-center justify-between">
 
                 <div className="flex items-center gap-2">
-                    <img src="/cropped-Logo-Labrin-solo-small.png" alt="Logo" className="h-8 md:h-10 w-auto" />
+                    <img src="/cropped-Logo-Labrin-solo-small.png" alt="Logo Laboratorios Rincón" className="h-8 md:h-10 w-auto" />
                 </div>
 
                 {/* Mobile Menu Button */}
                 <button
                     className="md:hidden p-2 text-gray-700 hover:text-red-600 focus:outline-none"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
+                    aria-label="Abrir menú"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         {isMenuOpen ? (
@@ -83,7 +84,7 @@ export default function Navbar() {
                         Presupuesto
                     </NavLink>
 
-                    <button className="text-gray-700 hover:text-red-600">
+                    <button className="text-gray-700 hover:text-red-600" aria-label="Buscar productos">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>

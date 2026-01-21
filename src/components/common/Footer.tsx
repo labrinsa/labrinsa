@@ -21,7 +21,7 @@ const Footer = () => {
                         <div className="flex flex-col z-10">
                             <img
                                 src="/cropped-Logo-Labrin-solo-small.png"
-                                alt="Logo Labrin"
+                                alt="Logo Laboratorios Rincón"
                                 className="w-48 md:w-full max-w-[220px] h-auto object-contain mb-4"
                             />
                         </div>
