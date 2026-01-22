@@ -50,7 +50,7 @@ export default async function handler(req, res) {
 
     try {
         const { data, error } = await resend.emails.send({
-            from: 'Solicitudes Labrinsa <notificaciones@labrinsa.net>', // Asegúrate de verificar este dominio en Resend
+            from: 'Labrinsa <pedido@labrinsa.net>', // Asegúrate de verificar este dominio en Resend
             to: [DEST_EMAIL],
             subject: isQuote ? `Nuevo Presupuesto: ${name}` : `Contacto: ${subject} - ${name}`,
             reply_to: email,
