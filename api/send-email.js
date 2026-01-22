@@ -3,6 +3,8 @@ import { Resend } from 'resend';
 export default async function handler(req, res) {
     // 0. Initialize Resend inside handler to prevent crash on cold start if key is missing
     const apiKey = process.env.RESEND_API_KEY;
+    const DEST_EMAIL = process.env.DEST_EMAIL;
+
     if (!apiKey) {
         console.error('CRITICAL: RESEND_API_KEY is not defined in environment variables.');
         return res.status(500).json({
@@ -34,8 +36,6 @@ export default async function handler(req, res) {
     if (!isQuote && !subject) {
         return res.status(400).json({ error: 'Missing required fields: quoteItems or subject' });
     }
-
-    const DEST_EMAIL = 'proyectolabrinsa@outlook.com';
 
     let productListHtml = '';
     if (isQuote) {
