@@ -27,7 +27,7 @@ export default async function handler(req, res) {
     }
 
     // 2. Validation & Defensive Coding
-    let clientName = typeof name === 'string' ? name.trim() : (typeof name === 'object' && name !== null ? JSON.stringify(name) : String(name));
+    let clientName = typeof name === 'string' ? name.trim() : String(name);
     let clientEmail = typeof email === 'string' ? email.trim() : String(email);
 
     if (!clientName || clientName === '' || !clientEmail || clientEmail === '') {
