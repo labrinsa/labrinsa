@@ -94,10 +94,10 @@ export default async function handler(req, res) {
                     <div class="badge">${isQuote ? 'SOLICITUD DE PRESUPUESTO' : 'NUEVO CONTACTO'}</div>
                     
                     <div class="info-item">
-                        <span class="label">Nombre:</span> ${name}
+                        <span class="label">Nombre del cliente:</span> ${name}
                     </div>
                     <div class="info-item">
-                        <span class="label">Correo:</span> <a href="mailto:${email}" style="color: #dc2626; text-decoration: none;">${email}</a>
+                        <span class="label">Correo del cliente:</span> <a href="mailto:${email}" style="color: #dc2626; text-decoration: none;">${email}</a>
                     </div>
                     ${!isQuote && subject ? `
                         <div class="info-item">
