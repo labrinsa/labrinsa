@@ -31,7 +31,10 @@ const QuotePage = () => {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    ...formData,
+                    name: formData.name.trim(),
+                    email: formData.email.trim(),
+                    message: formData.message.trim(),
+                    honeypot: formData.honeypot,
                     quoteItems: quoteItems.map(item => ({
                         id: item.id,
                         name: item.name,
@@ -187,7 +190,7 @@ const QuotePage = () => {
                                 </div>
 
                                 <div>
-                                    <label htmlFor="name" className="block text-sm font-bold text-gray-700 mb-1 italic">Nombre Completo</label>
+                                    <label htmlFor="name" className="block text-sm font-bold text-gray-700 mb-1 italic">Nombre Completo *</label>
                                     <input
                                         type="text"
                                         id="name"
@@ -201,7 +204,7 @@ const QuotePage = () => {
                                     />
                                 </div>
                                 <div>
-                                    <label htmlFor="email" className="block text-sm font-bold text-gray-700 mb-1 italic">Correo Electrónico</label>
+                                    <label htmlFor="email" className="block text-sm font-bold text-gray-700 mb-1 italic">Correo Electrónico *</label>
                                     <input
                                         type="email"
                                         id="email"

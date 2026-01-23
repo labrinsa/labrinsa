@@ -28,7 +28,12 @@ const ContactPage = () => {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(formData),
+                body: JSON.stringify({
+                    ...formData,
+                    name: formData.name.trim(),
+                    email: formData.email.trim(),
+                    message: formData.message.trim()
+                }),
             });
 
             const result = await response.json();

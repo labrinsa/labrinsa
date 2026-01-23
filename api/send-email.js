@@ -26,9 +26,12 @@ export default async function handler(req, res) {
         return res.status(200).json({ success: true, message: 'Spam detected' });
     }
 
-    // 2. Validation
-    if (!name || !email) {
-        return res.status(400).json({ error: 'Missing required fields' });
+    // 2. Validation & Defensive Coding
+    let clientName = typeof name === 'string' ? name.trim() : (typeof name === 'object' && name !== null ? JSON.stringify(name) : String(name));
+    let clientEmail = typeof email === 'string' ? email.trim() : String(email);
+
+    if (!clientName || clientName === '' || !clientEmail || clientEmail === '') {
+        return res.status(400).json({ error: 'El nombre y el correo son obligatorios.' });
     }
 
     const isQuote = quoteItems && Array.isArray(quoteItems) && quoteItems.length > 0;
@@ -66,8 +69,8 @@ export default async function handler(req, res) {
         const { data, error } = await resend.emails.send({
             from: 'Labrinsa <pedido@labrinsa.net>', // Asegúrate de verificar este dominio en Resend
             to: [DEST_EMAIL],
-            subject: isQuote ? `Nuevo presupuesto para "${email}"` : `Contacto: ${subject} - ${name}`,
-            reply_to: email,
+            subject: isQuote ? `Nuevo presupuesto para "${clientEmail}"` : `Contacto: ${subject} - ${clientName}`,
+            reply_to: clientEmail,
             html: `
         <!DOCTYPE html>
         <html lang="es">
@@ -94,10 +97,10 @@ export default async function handler(req, res) {
                     <div class="badge">${isQuote ? 'SOLICITUD DE PRESUPUESTO' : 'NUEVO CONTACTO'}</div>
                     
                     <div class="info-item">
-                        <span class="label">Nombre del cliente:</span> ${name}
+                        <span class="label">Nombre del cliente:</span> ${clientName}
                     </div>
                     <div class="info-item">
-                        <span class="label">Correo del cliente:</span> <a href="mailto:${email}" style="color: #dc2626; text-decoration: none;">${email}</a>
+                        <span class="label">Correo del cliente:</span> <a href="mailto:${clientEmail}" style="color: #dc2626; text-decoration: none;">${clientEmail}</a>
                     </div>
                     ${!isQuote && subject ? `
                         <div class="info-item">
