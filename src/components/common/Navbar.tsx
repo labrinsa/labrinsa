@@ -1,11 +1,13 @@
-'use client'
-import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import { FileText } from 'lucide-react'
 import { useQuote } from '../../context/QuoteContext'
+import SearchBar from './SearchBar'
+
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isSearchOpen, setIsSearchOpen] = useState(false);
     const { totalItems } = useQuote();
 
     return (
@@ -84,11 +86,20 @@ export default function Navbar() {
                         Presupuesto
                     </NavLink>
 
-                    <button className="text-gray-700 hover:text-red-600" aria-label="Buscar productos">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
-                    </button>
+                    <div className="relative">
+                        <button
+                            className="text-gray-700 hover:text-red-600 transition-colors pt-1"
+                            aria-label="Buscar productos"
+                            onClick={() => setIsSearchOpen(!isSearchOpen)}
+                        >
+                            <SearchBar
+                                showSuggestions={true}
+                                onItemClick={() => setIsSearchOpen(false)}
+                                className="w-64"
+                            />
+                        </button>
+                    </div>
+
                 </div>
 
                 <div className="hidden lg:flex flex-col items-end gap-3">
@@ -185,6 +196,7 @@ export default function Navbar() {
                             className={({ isActive }) =>
                                 `hover:text-red-600 text-lg border-b border-gray-100 pb-2 ${isActive ? 'text-gray-900 font-bold' : 'text-gray-600 font-medium'}`
                             }
+                            onClick={() => setIsMenuOpen(false)}
                         >
                             Inicio
                         </NavLink>
@@ -193,6 +205,7 @@ export default function Navbar() {
                             className={({ isActive }) =>
                                 `hover:text-red-600 text-lg border-b border-gray-100 pb-2 ${isActive ? 'text-gray-900 font-bold' : 'text-gray-600 font-medium'}`
                             }
+                            onClick={() => setIsMenuOpen(false)}
                         >
                             Productos
                         </NavLink>
@@ -228,12 +241,13 @@ export default function Navbar() {
                                 </span>
                             )}
                         </NavLink>
-                        <button className="flex items-center text-gray-600 hover:text-red-600 font-medium text-lg border-b border-gray-100 pb-2 w-full text-left">
-                            <span className="mr-2">Buscar</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                            </svg>
-                        </button>
+                        <div className="pt-2 border-t border-gray-100">
+                            <SearchBar
+                                onItemClick={() => setIsMenuOpen(false)}
+                                placeholder="Buscar..."
+                            />
+                        </div>
+
                     </div>
                 </div>
             </div>

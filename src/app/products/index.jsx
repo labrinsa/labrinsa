@@ -1,25 +1,40 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { products, categories } from '../../data/mockData';
+import SearchBar from '../../components/common/SearchBar';
 
 const ProductsPage = () => {
     const ITEMS_PER_PAGE = 8; // Configurable max items per page
 
-    // Estado para la página actual
-    const [currentPage, setCurrentPage] = useState(1);
-
     const location = useLocation();
     const searchParams = new URLSearchParams(location.search);
     const selectedCategory = searchParams.get('category');
+    const urlSearchQuery = searchParams.get('search') || '';
 
-    // Reset pagination when category changes
+    // Estado para la página actual y búsqueda
+    const [currentPage, setCurrentPage] = useState(1);
+    const [searchQuery, setSearchQuery] = useState(urlSearchQuery);
+
+    // Sync search query from URL when it changes
+    useEffect(() => {
+        if (urlSearchQuery !== searchQuery) {
+            setSearchQuery(urlSearchQuery);
+        }
+    }, [urlSearchQuery]);
+
+
+    // Reset pagination when category or search changes
     useEffect(() => {
         setCurrentPage(1);
-    }, [selectedCategory]);
+    }, [selectedCategory, searchQuery]);
 
-    const filteredProducts = selectedCategory
-        ? products.filter(product => product.category === selectedCategory)
-        : products;
+    const filteredProducts = products.filter(product => {
+        const matchesCategory = selectedCategory ? product.category === selectedCategory : true;
+        const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            product.category.toLowerCase().includes(searchQuery.toLowerCase());
+        return matchesCategory && matchesSearch;
+    });
+
 
     const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
@@ -51,15 +66,6 @@ const ProductsPage = () => {
 
                     {/* Lado Izquierdo: Galería y Paginación */}
                     <div className="flex-1">
-                        <div className="flex justify-between items-center mb-10 text-gray-500 text-sm italic">
-                            <p>
-                                Mostrando {filteredProducts.length > 0 ? startIndex + 1 : 0}–
-                                {Math.min(startIndex + ITEMS_PER_PAGE, filteredProducts.length)} de {filteredProducts.length} resultados
-                            </p>
-                            <select className="bg-gray-50 border border-gray-200 rounded px-3 py-2 outline-none">
-                                <option>Orden predeterminado</option>
-                            </select>
-                        </div>
 
                         {/* Grid de Productos */}
                         {currentProducts.length > 0 ? (
@@ -122,10 +128,14 @@ const ProductsPage = () => {
                     {/* Sidebar (Categorías) */}
                     <aside className="w-full md:w-72 space-y-12">
                         {/* Buscador y categorías como el diseño anterior... */}
-                        <div className="flex h-11 mb-10">
-                            <input type="text" placeholder="Buscar productos..." className="flex-1 bg-gray-100 border-none rounded-l-full px-5 text-sm outline-none" />
-                            <button className="bg-[#e63946] text-white px-6 rounded-r-full text-sm font-bold">Buscar</button>
-                        </div>
+                        <SearchBar
+                            className="mb-10"
+                            initialValue={searchQuery}
+                            onSearch={(query) => setSearchQuery(query)}
+                            showSuggestions={false}
+                        />
+
+
                         <div>
                             <h2 className="text-xl font-bold text-gray-900 mb-6">Categorías del producto</h2>
                             <ul className="space-y-4 text-[15px] font-medium text-gray-700">
