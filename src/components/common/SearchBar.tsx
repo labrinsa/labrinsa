@@ -60,10 +60,11 @@ const SearchBar: React.FC<SearchBarProps> = ({
     };
 
     const handleItemClick = (productId: number) => {
+        // Always navigate to product
+        navigate(`/products/${productId}`);
+
         if (onItemClick) {
             onItemClick(productId);
-        } else {
-            navigate(`/products/${productId}`);
         }
         setSearchQuery('');
         setIsSuggestionsOpen(false);

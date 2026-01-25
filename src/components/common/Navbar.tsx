@@ -87,17 +87,13 @@ export default function Navbar() {
                     </NavLink>
 
                     <div className="relative">
-                        <button
-                            className="text-gray-700 hover:text-red-600 transition-colors pt-1"
-                            aria-label="Buscar productos"
-                            onClick={() => setIsSearchOpen(!isSearchOpen)}
-                        >
+                        <div className="pt-1">
                             <SearchBar
                                 showSuggestions={true}
                                 onItemClick={() => setIsSearchOpen(false)}
                                 className="w-64"
                             />
-                        </button>
+                        </div>
                     </div>
 
                 </div>
