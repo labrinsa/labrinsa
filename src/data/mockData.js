@@ -11,7 +11,8 @@ export const categories = [
     "Antiséptico inyectable",
     "Antibiótico oral",
     "Antiséptico tópico",
-    "Solución Ótica"
+    "Solución Ótica",
+    "Antiparasitario oral"
 ];
 
 export const products = [
@@ -1884,6 +1885,171 @@ export const products = [
             "Venta bajo prescripción del Médico Veterinario."
         ],
         "pdfPath": "/pdfs/otibrin.pdf",
+        "originalUrl": ""
+    },
+    {
+        "id": 51,
+        "name": "LABRIVEC 2-4,5 Kg",
+        "image": "/images/products/labrivec-2-4-5kg.jpg",
+        "category": "Antiparasitario oral",
+        "description": "Labrivec para perros es una tableta indicada como antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses. Para perros más de 2 a 4,5 kg de peso, tableta de 292,5 mg equivalente a 112,5 mg de Fluralaner.",
+        "composition": [
+            {
+                "name": "Fluralaner",
+                "quantity": "384,6 mg / 1000 mg (112,5 mg por tableta)"
+            },
+            {
+                "name": "Excipientes c.s.p.",
+                "quantity": "1000 mg"
+            }
+        ],
+        "indications": [
+            "Antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses.",
+            "Para perros de más de 2 a 4,5 kg de peso."
+        ],
+        "dosage": "1 tableta de 292,5 mg (112,5 mg de Fluralaner) cada 3 meses.",
+        "administration": "Vía Oral",
+        "presentation": "Contenido neto: 1 tableta de 292,5 mg (CPE0925597193)",
+        "warnings": [
+            "Manténgase fuera del alcance de los niños.",
+            "Almacenar en un lugar fresco y al abrigo de la luz.",
+            "Venta bajo prescripción del Médico Veterinario.",
+            "En caso de reacción consulte de inmediato con el Médico Veterinario.",
+            "No administrar a cachorros menores de 2 meses de edad y a perros menor de 2 kg de peso."
+        ],
+        "pdfPath": "/pdfs/labrivec-2-4-5kg.pdf",
+        "originalUrl": ""
+    },
+    {
+        "id": 52,
+        "name": "LABRIVEC 4,5-10 Kg",
+        "image": "/images/products/labrivec-4-5-10kg.jpg",
+        "category": "Antiparasitario oral",
+        "description": "Labrivec para perros es una tableta indicada como antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses. Para perros más de 4,5 a 10 kg de peso, tableta de 650 mg equivalente a 250 mg de Fluralaner.",
+        "composition": [
+            {
+                "name": "Fluralaner",
+                "quantity": "384,6 mg / 1000 mg (250 mg por tableta)"
+            },
+            {
+                "name": "Excipientes c.s.p.",
+                "quantity": "1000 mg"
+            }
+        ],
+        "indications": [
+            "Antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses.",
+            "Para perros de más de 4,5 a 10 kg de peso."
+        ],
+        "dosage": "1 tableta de 650 mg (250 mg de Fluralaner) cada 3 meses.",
+        "administration": "Vía Oral",
+        "presentation": "Contenido neto: 1 tableta de 650 mg (CPE0925597190)",
+        "warnings": [
+            "Manténgase fuera del alcance de los niños.",
+            "Almacenar en un lugar fresco y al abrigo de la luz.",
+            "Venta bajo prescripción del Médico Veterinario.",
+            "En caso de reacción consulte de inmediato con el Médico Veterinario.",
+            "No administrar a cachorros menores de 2 meses de edad y a perros menor de 2 kg de peso."
+        ],
+        "pdfPath": "/pdfs/labrivec-4-5-10kg.pdf",
+        "originalUrl": ""
+    },
+    {
+        "id": 53,
+        "name": "LABRIVEC 10-20 Kg",
+        "image": "/images/products/labrivec-10-20kg.jpg",
+        "category": "Antiparasitario oral",
+        "description": "Labrivec para perros es una tableta indicada como antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses. Para perros más de 10 a 20 kg de peso, tableta de 1,3 g equivalente a 500 mg de Fluralaner.",
+        "composition": [
+            {
+                "name": "Fluralaner",
+                "quantity": "384,6 mg / 1000 mg (500 mg por tableta)"
+            },
+            {
+                "name": "Excipientes c.s.p.",
+                "quantity": "1000 mg"
+            }
+        ],
+        "indications": [
+            "Antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses.",
+            "Para perros de más de 10 a 20 kg de peso."
+        ],
+        "dosage": "1 tableta de 1,3 g (500 mg de Fluralaner) cada 3 meses.",
+        "administration": "Vía Oral",
+        "presentation": "Contenido neto: 1 tableta de 1,3 g (CPE0925597194)",
+        "warnings": [
+            "Manténgase fuera del alcance de los niños.",
+            "Almacenar en un lugar fresco y al abrigo de la luz.",
+            "Venta bajo prescripción del Médico Veterinario.",
+            "En caso de reacción consulte de inmediato con el Médico Veterinario.",
+            "No administrar a cachorros menores de 2 meses de edad y a perros menor de 2 kg de peso."
+        ],
+        "pdfPath": "/pdfs/labrivec-10-20kg.pdf",
+        "originalUrl": ""
+    },
+    {
+        "id": 54,
+        "name": "LABRIVEC 20-40 Kg",
+        "image": "/images/products/labrivec-20-40kg.jpg",
+        "category": "Antiparasitario oral",
+        "description": "Labrivec para perros es una tableta indicada como antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses. Para perros más de 20 a 40 kg de peso, tableta de 2,6 g equivalente a 1000 mg de Fluralaner.",
+        "composition": [
+            {
+                "name": "Fluralaner",
+                "quantity": "384,6 mg / 1000 mg (1000 mg por tableta)"
+            },
+            {
+                "name": "Excipientes c.s.p.",
+                "quantity": "1000 mg"
+            }
+        ],
+        "indications": [
+            "Antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses.",
+            "Para perros de más de 20 a 40 kg de peso."
+        ],
+        "dosage": "1 tableta de 2,6 g (1000 mg de Fluralaner) cada 3 meses.",
+        "administration": "Vía Oral",
+        "presentation": "Contenido neto: 1 tableta de 2,6 g (CPE0925597191)",
+        "warnings": [
+            "Manténgase fuera del alcance de los niños.",
+            "Almacenar en un lugar fresco y al abrigo de la luz.",
+            "Venta bajo prescripción del Médico Veterinario.",
+            "En caso de reacción consulte de inmediato con el Médico Veterinario.",
+            "No administrar a cachorros menores de 2 meses de edad y a perros menor de 2 kg de peso."
+        ],
+        "pdfPath": "/pdfs/labrivec-20-40kg.pdf",
+        "originalUrl": ""
+    },
+    {
+        "id": 55,
+        "name": "LABRIVEC 40-56 Kg",
+        "image": "/images/products/labrivec-40-56kg.jpg",
+        "category": "Antiparasitario oral",
+        "description": "Labrivec para perros es una tableta indicada como antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses. Para perros más de 40 a 56 kg de peso, tableta de 3,64 g equivalente a 1400 mg de Fluralaner.",
+        "composition": [
+            {
+                "name": "Fluralaner",
+                "quantity": "384,6 mg / 1000 mg (1400 mg por tableta)"
+            },
+            {
+                "name": "Excipientes c.s.p.",
+                "quantity": "1000 mg"
+            }
+        ],
+        "indications": [
+            "Antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses.",
+            "Para perros de más de 40 a 56 kg de peso."
+        ],
+        "dosage": "1 tableta de 3,64 g (1400 mg de Fluralaner) cada 3 meses.",
+        "administration": "Vía Oral",
+        "presentation": "Contenido neto: 1 tableta de 3,64 g (CPE0925597192)",
+        "warnings": [
+            "Manténgase fuera del alcance de los niños.",
+            "Almacenar en un lugar fresco y al abrigo de la luz.",
+            "Venta bajo prescripción del Médico Veterinario.",
+            "En caso de reacción consulte de inmediato con el Médico Veterinario.",
+            "No administrar a cachorros menores de 2 meses de edad y a perros menor de 2 kg de peso."
+        ],
+        "pdfPath": "/pdfs/labrivec-40-56kg.pdf",
         "originalUrl": ""
     }
 ];
