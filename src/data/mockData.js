@@ -903,7 +903,7 @@ export const products = [
     },
     {
         "id": 24,
-        "name": "Ivermisol 400 Ml",
+        "name": "Ivermisol 500 Ml",
         "image": "/images/products/ivermisol-400-ml.jpg",
         "category": "Antiparasitario inyectable",
         "description": "Ivermisol – 500ML\nCada 100 ml contienen:\n\n\n\nLevamisol Clorhidrato\n18,75 g\n\n\nIvermectina\n1,0 g\n\n\nExcipientes c.s.p\n100 ml\n\n\n\n\n\n\n\n\n\n\n\nIndicaciones:\nEs un endectocida antihelmíntico inyectable de fácil aplicación y amplio espectro de acción simultanea, con gran efectividad contra formas adultas, larvarias y ovicida de parásitos internos y externos.\nDosis: Aplicar 1 ml por cada 50 Kg de peso vivo equivalente a: 200mcg/Kg de Ivermectina por Kilogramo de peso corporal y 3,75 mg/Kg de Levamisol por Kilogramo de peso corporal.\nVía de Administración: Bovinos: Subcutánea, en la piel suelta de la tabla del cuello o detrás de la escápula.\nAdvertencias:\nNo utilizar en vacas lecheras durante la lactancia o 35 días antes del parto.\nNo destinar a beneficio para consumo humano los animales tratados hasta 35 días después del último tratamiento.\nAlmacenar en un lugar fresco y al abrigo de la luz.\nManténgase fuera del alcance de los niños.\nVenta bajo prescripción del Médico Veterinario.",
@@ -954,7 +954,7 @@ export const products = [
     },
     {
         "id": 26,
-        "name": "Kaobrin",
+        "name": "Kaobrin 120ml",
         "image": "/images/products/kaobrin.jpg",
         "category": "Antidiarreico oral",
         "description": "Kaobrin 120 ML\nCada 100 ml contienen:\n\n\n\nSulfametoxazol\n2500 mg\n\n\nTrimetoprim\n500 mg\n\n\nSulfato de Neomicina\n725 mg\n\n\nCaolín Coloidal\n10000 mg\n\n\nCloruro de Sodio\n500 mg\n\n\nCloruro de Potasio\n200 mg\n\n\nExcipientes c.s.p\n100 ml\n\n\n\nIndicaciones:\nAntibacteriano de acción antidiarreica, indicado en casos de diarreas causadas por\ndiversos factores: infecciones gastrointestinales, enteritis parasitarias, diarrea blanca de los\nterneros, gastroenteritis, intoxicaciones alimentarias, síndrome de mala absorción, enfermedades\nvirales, entre otras.\n\nAgite bien antes de usar\nVía de Administración: Oral.\nBovinos y Equinos: 30 – 120 ml cada 12 horas.\nPorcinos, Ovinos y Caprinos: 10 – 30 ml cada 12 horas.\nCaninos y Felinos: 5 – 10 ml cada 12 horas.\nEsta dosis puede ser modificada por el Médico Veterinario.\nAdvertencias:\nPeriodo de Restricción: Suspender el uso del producto 15 días antes de la salida de los animales al\nsacrificio.\nAlmacenar en lugar fresco y al abrigo de la luz.\nManténgase fuera del alcance de los niños.\nVenta bajo prescripción del Médico Veterinario.",
@@ -1105,10 +1105,10 @@ export const products = [
     },
     {
         "id": 31,
-        "name": "Labrisol 500 Ml",
+        "name": "Labrisol 100 Ml",
         "image": "/images/products/labrisol-500-ml.jpg",
         "category": "Antiparasitario inyectable",
-        "description": "Solución al 15% de Clorhidrato de Levamisol\nCada 100 ml. contiene:\n\n\n\nLevamisol\n15 g.\n\n\nExcipientes c.s.p.\n100 ml.\n\n\n\nIndicaciones:\nEs un antihelmíntico inyectable de fácil aplicación y amplio espectro antiparasitario, múltiple acción simultanea, de baja toxicidad y gran efectividad contra formas adultas y larvarias de parásitos internos gastrointestinales y pulmonares: Haemonchus, Cooperia, Trichostrongylus, Nematodirus, Ascaris, Metastrongylus, Dictyocaulus.\nDosis: Aplicar 5 mg/kg de peso vivo.\n0.5 ml por cada 15 kg de P.V sin excederse de 10 ml.\nVía de administración:\nBovinos: Intramuscular profunda.\nOvinos y Caprinos: Subcutánea detrás de la paleta. Porcinos: Subcutánea o intramuscular profunda.\nAdvertencias:\nAlmacenar en lugar fresco y al abrigo de la luz.\nManténgase fuera del alcance de los niños.\nVenta bajo prescripción del Médico Veterinario.\nNo utilizar la leche del animal para consumo humano\ndurante el tratamiento o 24 horas de haber finalizado\nel mismo.\nSuspender el uso del producto 7 días antes de la salida\nde los animales al sacrificio.",
+        "description": "Solución al 15% de Clorhidrato de Levamisol – 100ML\nCada 100 ml. contiene:\n\n\n\nLevamisol\n15 g.\n\n\nExcipientes c.s.p.\n100 ml.\n\n\n\nIndicaciones:\nEs un antihelmíntico inyectable de fácil aplicación y amplio espectro antiparasitario, múltiple acción simultanea, de baja toxicidad y gran efectividad contra formas adultas y larvarias de parásitos internos gastrointestinales y pulmonares: Haemonchus, Cooperia, Trichostrongylus, Nematodirus, Ascaris, Metastrongylus, Dictyocaulus.\nDosis: Aplicar 5 mg/kg de peso vivo.\n0.5 ml por cada 15 kg de P.V sin excederse de 10 ml.\nVía de administración:\nBovinos: Intramuscular profunda.\nOvinos y Caprinos: Subcutánea detrás de la paleta. Porcinos: Subcutánea o intramuscular profunda.\nAdvertencias:\nAlmacenar en lugar fresco y al abrigo de la luz.\nManténgase fuera del alcance de los niños.\nVenta bajo prescripción del Médico Veterinario.\nNo utilizar la leche del animal para consumo humano\ndurante el tratamiento o 24 horas de haber finalizado\nel mismo.\nSuspender el uso del producto 7 días antes de la salida\nde los animales al sacrificio.",
         "composition": [
             {
                 "name": "Levamisol",
@@ -1142,7 +1142,7 @@ export const products = [
     },
     {
         "id": 32,
-        "name": "Labrisol 500 Ml 2",
+        "name": "Labrisol 500 Ml",
         "image": "/images/products/labrisol-500-ml-2.jpg",
         "category": "Antiparasitario inyectable",
         "description": "Solución al 15% de Clorhidrato de Levamisol\nCada 100 ml. contiene:\n\n\n\nLevamisol\n15 g.\n\n\nExcipientes c.s.p.\n100 ml.\n\n\n\nIndicaciones:\nEs un antihelmíntico inyectable de fácil aplicación y amplio espectro antiparasitario, múltiple acción simultanea, de baja toxicidad y gran efectividad contra formas adultas y larvarias de parásitos internos gastrointestinales y pulmonares: Haemonchus, Cooperia, Trichostrongylus, Nematodirus, Ascaris, Metastrongylus, Dictyocaulus.\nDosis: Aplicar 5 mg/kg de peso vivo.\n0.5 ml por cada 15 kg de P.V sin excederse de 10 ml.\nVía de administración:\nBovinos: Intramuscular profunda.\nOvinos y Caprinos: Subcutánea detrás de la paleta. Porcinos: Subcutánea o intramuscular profunda.\nAdvertencias:\nAlmacenar en lugar fresco y al abrigo de la luz.\nManténgase fuera del alcance de los niños.\nVenta bajo prescripción del Médico Veterinario.\nNo utilizar la leche del animal para consumo humano\ndurante el tratamiento o 24 horas de haber finalizado\nel mismo.\nSuspender el uso del producto 7 días antes de la salida\nde los animales al sacrificio.",
@@ -1384,7 +1384,7 @@ export const products = [
     },
     {
         "id": 37,
-        "name": "Pomada Yodoyodurada 150g",
+        "name": "Pomada Iodurada 150g",
         "image": "/images/products/pomada-yodoyodurada-150g.jpg",
         "category": "Pomada tópica",
         "description": "Cada 100 g contiene:\n\n\n\nYodo Resublimado\n2 g\n\n\nYoduro de Potasio\n2 g\n\n\nAlcanfor\n1 g\n\n\nSalicilato de Metilo\n1 ml\n\n\nExcipientes c.s.p.\n100 g\n\n\n\nIndicaciones:\nPor su acción antiflogística y analgésica es un valioso auxiliar del tratamiento específico contra la mastitis (inflamación de la ubre), contusiones e inflamaciones de origen no específico.\nBovinos, Equinos, Ovinos y Caninos aplíquese la cantidad necesaria libremente en la parte afectada o inflamada hasta cubrirla mediante un ligero masaje. Repítase la cura todos los días.\nAdvertencias:\nAlmacenar en un lugar fresco y al abrigo de la luz.\nMantenganse fuera del alcance de los niños.\nVenta bajo prescripción del Médico Veterinario.",
@@ -1424,7 +1424,7 @@ export const products = [
     },
     {
         "id": 38,
-        "name": "Pomada Yodoyodurada 400g",
+        "name": "Pomada Iodurada 400g",
         "image": "/images/products/pomada-yodoyodurada-400g.jpg",
         "category": "Pomada tópica",
         "description": "Cada 100 g. contiene:\n\n\n\nYodo Resublimado\n2 g\n\n\nYoduro de Potasio\n2 g\n\n\nAlcanfor\n1 g\n\n\nSalicilato de Metilo\n1 ml\n\n\nExcipientes c.s.p.\n100 g\n\n\n\nIndicaciones:\nPor su acción antiflogística y analgésica es un valioso auxiliar del tratamiento específico contra la mastitis (inflamación de la ubre), contusiones e inflamaciones de origen no específico.\nBovinos, Equinos, Ovinos y Caninos aplíquese la cantidad necesaria libremente en la parte afectada o inflamada hasta cubrirla mediante un ligero masaje. Repítase la cura todos los días.\nAdvertencias:\nAlmacenar en un lugar fresco y al abrigo de la luz.\nMantenganse fuera del alcance de los niños.\nVenta bajo prescripción del Médico Veterinario.",
@@ -2050,6 +2050,60 @@ export const products = [
             "No administrar a cachorros menores de 2 meses de edad y a perros menor de 2 kg de peso."
         ],
         "pdfPath": "/pdfs/labrivec-40-56kg.pdf",
+        "originalUrl": ""
+    },
+    {
+        "id": 56,
+        "name": "Kaobrin 250ml",
+        "image": "/images/products/kaobrin.jpg",
+        "category": "Antidiarreico oral",
+        "description": "Kaobrin 250 ML\nCada 100 ml contienen:\n\n\n\nSulfametoxazol\n2500 mg\n\n\nTrimetoprim\n500 mg\n\n\nSulfato de Neomicina\n725 mg\n\n\nCaolín Coloidal\n10000 mg\n\n\nCloruro de Sodio\n500 mg\n\n\nCloruro de Potasio\n200 mg\n\n\nExcipientes c.s.p\n100 ml\n\n\n\nIndicaciones:\nAntibacteriano de acción antidiarreica, indicado en casos de diarreas causadas por diversos factores: infecciones gastrointestinales, enteritis parasitarias, diarrea blanca de los terneros, gastroenteritis, intoxicaciones alimentarias, síndrome de mala absorción, enfermedades virales, entre otras.\n\nAgite bien antes de usar\nVía de Administración: Oral.\nBovinos y Equinos: 30 – 120 ml cada 12 horas.\nPorcinos, Ovinos y Caprinos: 10 – 30 ml cada 12 horas.\nCaninos y Felinos: 5 – 10 ml cada 12 horas.\nEsta dosis puede ser modificada por el Médico Veterinario.\nAdvertencias:\nPeriodo de Restricción: Suspender el uso del producto 15 días antes de la salida de los animales al sacrificio.\nAlmacenar en lugar fresco y al abrigo de la luz.\nManténgase fuera del alcance de los niños.\nVenta bajo prescripción del Médico Veterinario.",
+        "composition": [
+            {
+                "name": "Sulfametoxazol",
+                "quantity": "2500 mg"
+            },
+            {
+                "name": "Trimetoprim",
+                "quantity": "500 mg"
+            },
+            {
+                "name": "Sulfato de Neomicina",
+                "quantity": "725 mg"
+            },
+            {
+                "name": "Caolín Coloidal",
+                "quantity": "10000 mg"
+            },
+            {
+                "name": "Cloruro de Sodio",
+                "quantity": "500 mg"
+            },
+            {
+                "name": "Cloruro de Potasio",
+                "quantity": "200 mg"
+            },
+            {
+                "name": "Excipientes c.s.p.",
+                "quantity": "100 ml"
+            }
+        ],
+        "indications": [
+            "Antibacteriano de acción antidiarreica, indicado en casos de diarreas causadas por diversos factores: infecciones gastrointestinales, enteritis parasitarias, diarrea blanca de los terneros, gastroenteritis, intoxicaciones alimentarias, síndrome de mala absorción, enfermedades virales, entre otras.",
+            "Agite bien antes de usar",
+            "Vía de Administración: Oral.",
+            "Bovinos y Equinos: 30 – 120 ml cada 12 horas.",
+            "Porcinos, Ovinos y Caprinos: 10 – 30 ml cada 12 horas.",
+            "Caninos y Felinos: 5 – 10 ml cada 12 horas.",
+            "Esta dosis puede ser modificada por el Médico Veterinario."
+        ],
+        "warnings": [
+            "Periodo de Restricción: Suspender el uso del producto 15 días antes de la salida de los animales al sacrificio.",
+            "Almacenar en lugar fresco y al abrigo de la luz.",
+            "Manténgase fuera del alcance de los niños.",
+            "Venta bajo prescripción del Médico Veterinario."
+        ],
+        "pdfPath": "/pdfs/kaobrin.pdf",
         "originalUrl": ""
     }
 ];
