@@ -117,6 +117,41 @@ export const products = [
         "originalUrl": "https://labrinsa.com/productos-jhesua/vitamina-inyectable/acido-ascorbico-al-10-500ml/"
     },
     {
+        "id": 49,
+        "name": "BOVISTREP Inyectable",
+        "image": "/images/products/bovistrep-inyectable.png",
+        "category": "Antibiótico inyectable",
+        "description": "Cada ML contiene:\nFlorfenicol 200 mg\nTilosina Tartrato 220 mg\nBromhexina HCl 5 MG\n\nIndicaciones:\nCombinacion antibiótica para el tratamiento de enfermedades respiratorias producidas por bacterias sensibles al Florfenicol y a la Tilosina con efecto expectorante broncopulmonar y mucolitico.\n\nIndicado en casos de neumonías, pleuroneumonia, pasteurelosis, bronquitis, traqueobronquitis, neumonía enzootica y rinitis atrofica.\n\nDosis: Bovinos, bufalinos y porcinos: 1 ml por cada 20 Kg de peso vivo. Repetir la aplicación a las 48 horas o según criterio del médico veterinario.\n\nVia de administración: Intramuscular profunda. No administrar más de 20 ml por punto de inyección.\n\nEmpaque: 28 unidades",
+        "composition": [
+            {
+                "name": "Florfenicol",
+                "quantity": "200 mg"
+            },
+            {
+                "name": "Tilosina Tartrato",
+                "quantity": "220 mg"
+            },
+            {
+                "name": "Bromhexina HCl",
+                "quantity": "5 MG"
+            }
+        ],
+        "indications": [
+            "Combinacion antibiótica para el tratamiento de enfermedades respiratorias producidas por bacterias sensibles al Florfenicol y a la Tilosina con efecto expectorante broncopulmonar y mucolitico.",
+            "Indicado en casos de neumonías, pleuroneumonia, pasteurelosis, bronquitis, traqueobronquitis, neumonía enzootica y rinitis atrofica."
+        ],
+        "dosage": "Bovinos, bufalinos y porcinos: 1 ml por cada 20 Kg de peso vivo. Repetir la aplicación a las 48 horas o según criterio del médico veterinario.",
+        "administration": "Intramuscular profunda. No administrar más de 20 ml por punto de inyección.",
+        "package": "28 unidades",
+        "warnings": [
+            "Almacenar en lugar fresco y al abrigo de la luz.",
+            "Manténgase fuera del alcance de los niños.",
+            "Venta bajo prescripción del Médico Veterinario."
+        ],
+        "pdfPath": "/pdfs/bovistrep-inyectable.pdf",
+        "originalUrl": ""
+    },
+    {
         "id": 4,
         "name": "Carbatan 300 G",
         "image": "/images/products/carbatan-300-g.jpg",
@@ -691,43 +726,6 @@ export const products = [
         "originalUrl": "https://labrinsa.com/productos-jhesua/suero-inyectable/gluconato-de-calcio-480ml/"
     },
     {
-        "id": 17,
-        "name": "Iverbrin L A 100ml",
-        "image": "/images/products/iverbrin-l-a-100ml.jpg",
-        "category": "Antiparasitario inyectable",
-        "description": "Cada 100 ml. contiene:\n\n\n\nIvermectina\n1 g\n\n\nExcipientes c.s.p.\n100 ml\n\n\n\nIndicaciones:\nIverbrin está indicado para el tratamiento y control de parásitos internos y\nexternos de los Bovinos, Ovinos, Caprinos, Porcinos.\nAdministre vía Subcutánea.\nEn Bovinos, Ovinos y Caprinos inyectar 1 ml. por cada 50 K.p.v. (200 mcg de Ivermectina por K.p.v.)\nEn Porcinos inyectar 1ml por cada 33 K.p.v.\nNota: se debe utilizar, aguja subcutánea corta.\nInyectar en varios puntos no más de 5ml.\nEn terneros o becerros debe inyectarse la dosis exacta en la tabla del cuello.\nAdvertencias:\nPeriodo de Restricción: Suspender el uso del producto 35 días de la salida de los animales al sacrificio.\nNo aplicar en vacas lecheras durante el periodo de lactancia ó 35 días antes del parto.\nConsumir la leche de vacas, cabras y ovejas inyectadas hasta 2 días después de la aplicación del producto.\nAlmacenar en lugar fresco y al abrigo de la luz.\nManténgase fuera del alcance de los niños.\nVenta bajo prescripción del Médico Veterinario.",
-        "composition": [
-            {
-                "name": "Ivermectina",
-                "quantity": "1 g"
-            },
-            {
-                "name": "Excipientes c.s.p.",
-                "quantity": "100 ml"
-            }
-        ],
-        "indications": [
-            "Iverbrin está indicado para el tratamiento y control de parásitos internos y",
-            "externos de los Bovinos, Ovinos, Caprinos, Porcinos.",
-            "Administre vía Subcutánea.",
-            "En Bovinos, Ovinos y Caprinos inyectar 1 ml. por cada 50 K.p.v. (200 mcg de Ivermectina por K.p.v.)",
-            "En Porcinos inyectar 1ml por cada 33 K.p.v.",
-            "Nota: se debe utilizar, aguja subcutánea corta.",
-            "Inyectar en varios puntos no más de 5ml.",
-            "En terneros o becerros debe inyectarse la dosis exacta en la tabla del cuello."
-        ],
-        "warnings": [
-            "Periodo de Restricción: Suspender el uso del producto 35 días de la salida de los animales al sacrificio.",
-            "No aplicar en vacas lecheras durante el periodo de lactancia ó 35 días antes del parto.",
-            "Consumir la leche de vacas, cabras y ovejas inyectadas hasta 2 días después de la aplicación del producto.",
-            "Almacenar en lugar fresco y al abrigo de la luz.",
-            "Manténgase fuera del alcance de los niños.",
-            "Venta bajo prescripción del Médico Veterinario."
-        ],
-        "pdfPath": "/pdfs/iverbrin-l-a-100ml.pdf",
-        "originalUrl": "https://labrinsa.com/productos-jhesua/antiparasitario-inyectable/iverbrin-l-a-100ml/"
-    },
-    {
         "id": 18,
         "name": "Iverbrin L A 10ml",
         "image": "/images/products/iverbrin-l-a-10ml.jpg",
@@ -763,6 +761,43 @@ export const products = [
         ],
         "pdfPath": "/pdfs/iverbrin-l-a-10ml.pdf",
         "originalUrl": "https://labrinsa.com/productos-jhesua/antiparasitario-inyectable/iverbrin-l-a-10ml/"
+    },
+    {
+        "id": 17,
+        "name": "Iverbrin L A 100ml",
+        "image": "/images/products/iverbrin-l-a-100ml.jpg",
+        "category": "Antiparasitario inyectable",
+        "description": "Cada 100 ml. contiene:\n\n\n\nIvermectina\n1 g\n\n\nExcipientes c.s.p.\n100 ml\n\n\n\nIndicaciones:\nIverbrin está indicado para el tratamiento y control de parásitos internos y\nexternos de los Bovinos, Ovinos, Caprinos, Porcinos.\nAdministre vía Subcutánea.\nEn Bovinos, Ovinos y Caprinos inyectar 1 ml. por cada 50 K.p.v. (200 mcg de Ivermectina por K.p.v.)\nEn Porcinos inyectar 1ml por cada 33 K.p.v.\nNota: se debe utilizar, aguja subcutánea corta.\nInyectar en varios puntos no más de 5ml.\nEn terneros o becerros debe inyectarse la dosis exacta en la tabla del cuello.\nAdvertencias:\nPeriodo de Restricción: Suspender el uso del producto 35 días de la salida de los animales al sacrificio.\nNo aplicar en vacas lecheras durante el periodo de lactancia ó 35 días antes del parto.\nConsumir la leche de vacas, cabras y ovejas inyectadas hasta 2 días después de la aplicación del producto.\nAlmacenar en lugar fresco y al abrigo de la luz.\nManténgase fuera del alcance de los niños.\nVenta bajo prescripción del Médico Veterinario.",
+        "composition": [
+            {
+                "name": "Ivermectina",
+                "quantity": "1 g"
+            },
+            {
+                "name": "Excipientes c.s.p.",
+                "quantity": "100 ml"
+            }
+        ],
+        "indications": [
+            "Iverbrin está indicado para el tratamiento y control de parásitos internos y",
+            "externos de los Bovinos, Ovinos, Caprinos, Porcinos.",
+            "Administre vía Subcutánea.",
+            "En Bovinos, Ovinos y Caprinos inyectar 1 ml. por cada 50 K.p.v. (200 mcg de Ivermectina por K.p.v.)",
+            "En Porcinos inyectar 1ml por cada 33 K.p.v.",
+            "Nota: se debe utilizar, aguja subcutánea corta.",
+            "Inyectar en varios puntos no más de 5ml.",
+            "En terneros o becerros debe inyectarse la dosis exacta en la tabla del cuello."
+        ],
+        "warnings": [
+            "Periodo de Restricción: Suspender el uso del producto 35 días de la salida de los animales al sacrificio.",
+            "No aplicar en vacas lecheras durante el periodo de lactancia ó 35 días antes del parto.",
+            "Consumir la leche de vacas, cabras y ovejas inyectadas hasta 2 días después de la aplicación del producto.",
+            "Almacenar en lugar fresco y al abrigo de la luz.",
+            "Manténgase fuera del alcance de los niños.",
+            "Venta bajo prescripción del Médico Veterinario."
+        ],
+        "pdfPath": "/pdfs/iverbrin-l-a-100ml.pdf",
+        "originalUrl": "https://labrinsa.com/productos-jhesua/antiparasitario-inyectable/iverbrin-l-a-100ml/"
     },
     {
         "id": 19,
@@ -802,9 +837,32 @@ export const products = [
         "originalUrl": "https://labrinsa.com/productos-jhesua/antiparasitario-inyectable/iverbrin-l-a-500ml/"
     },
     {
+        "id": 21,
+        "name": "Ivermectina Al 4 100ml",
+        "image": "/images/products/ivermectina-al-4-100ml.jpg",
+        "category": "Antiparasitario inyectable",
+        "description": "Ivermectina Al 4% – 100ML\nCada 100 ml contienen:\n\n\n\nIvermectina\n4 g\n\n\nExcipientes c.s.p\n100 ml\n\n\n\nIndicaciones:\nIvermectina al 4%, está indicado para el tratamiento y control de parásitos internos y externos de los Bovinos y Búfalos, tales como, nemátodos gastrointestinales, parásito pulmonar, piojos, ácaros de la sarna, garrapatas y miasis.\nAdministre solamente por vía Subcutánea, delante o detrás de la Paleta.\nNo administrar por vía Intramuscular o Endovenosa.\nInyectar 1 ml. por cada 50 k.p.v. (800 mcg de Ivermectina por k.p.v.) en Bovinos y Búfalos.\nLuego de la aplicación subcutánea puede producir un ligero malestar pasajero y/o inflamación en el sitio de la inyección. El efecto desaparece sin necesidad de tratamiento.\nAdvertencias:\nPeriodo de Restricción: Suspender el uso del producto a  42 días de la salida de los animales al sacrificio.\nAlmacenar en lugar fresco y al abrigo de la luz.\nManténgase fuera del alcance de los niños.\nVenta bajo prescripción del Médico Veterinario.",
+        "composition": [],
+        "indications": [
+            "Ivermectina al 4%, está indicado para el tratamiento y control de parásitos internos y externos de los Bovinos y Búfalos, tales como, nemátodos gastrointestinales, parásito pulmonar, piojos, ácaros de la sarna, garrapatas y miasis.",
+            "Administre solamente por vía Subcutánea, delante o detrás de la Paleta.",
+            "No administrar por vía Intramuscular o Endovenosa.",
+            "Inyectar 1 ml. por cada 50 k.p.v. (800 mcg de Ivermectina por k.p.v.) en Bovinos y Búfalos.",
+            "Luego de la aplicación subcutánea puede producir un ligero malestar pasajero y/o inflamación en el sitio de la inyección. El efecto desaparece sin necesidad de tratamiento."
+        ],
+        "warnings": [
+            "Periodo de Restricción: Suspender el uso del producto a  42 días de la salida de los animales al sacrificio.",
+            "Almacenar en lugar fresco y al abrigo de la luz.",
+            "Manténgase fuera del alcance de los niños.",
+            "Venta bajo prescripción del Médico Veterinario."
+        ],
+        "pdfPath": "/pdfs/ivermectina-al-4-100ml.pdf",
+        "originalUrl": "https://labrinsa.com/productos-jhesua/antiparasitario-inyectable/ivermectina-al-4-100ml/"
+    },
+    {
         "id": 20,
         "name": "Ivermectina Al 4 500ml",
-        "image": "/images/products/ivermectina-al-4-500ml.jpg",
+        "image": "/images/products/ivermectina-al-4-500ml-2.png",
         "category": "Antiparasitario inyectable",
         "description": "Cada 100 ml. contiene:\n\n\n\nIvermectina\n4 g\n\n\nExcipientes c.s.p.\n100 ml\n\n\n\nIndicaciones:\nIvermectina al 4%, esta indicado para el tratamiento y control de parásitos internos y externos de los Bovinos y Búfalos, tales como, nemátodos gastrointestinales, parásito pulmonar, piojos, ácaros de la sarna, garrapatas y miasis.\nAdministre solamente por vía Subcutánea, delante o detrás de la Paleta.\nNo administrar por vía Intramuscular o Endovenosa.\nInyectar 1 ml. por cada 50 k.p.v. (800 mcg de Ivermectina por k.p.v.) en Bovinos y Búfalos.\nLuego de la aplicación subcutánea puede producir un ligero malestar pasajero y/o inflamación en el sitio de la inyección. El efecto desaparece sin necesidad de tratamiento.\nAdvertencias:\nPeriodo de Restricción: Suspender el uso del producto 42 días de la salida de los animales al sacrificio.\nAlmacenar en lugar fresco y al abrigo de la luz.\nManténgase fuera del alcance de los niños.\nVenta bajo prescripción del Médico Veterinario.",
         "composition": [
@@ -832,52 +890,6 @@ export const products = [
         ],
         "pdfPath": "/pdfs/ivermectina-al-4-500ml.pdf",
         "originalUrl": "https://labrinsa.com/productos-jhesua/antiparasitario-inyectable/ivermectina-al-4-500ml/"
-    },
-    {
-        "id": 21,
-        "name": "Ivermectina Al 4 100ml",
-        "image": "/images/products/ivermectina-al-4-100ml.jpg",
-        "category": "Antiparasitario inyectable",
-        "description": "Ivermectina Al 4% – 100ML\nCada 100 ml contienen:\n\n\n\nIvermectina\n4 g\n\n\nExcipientes c.s.p\n100 ml\n\n\n\nIndicaciones:\nIvermectina al 4%, está indicado para el tratamiento y control de parásitos internos y externos de los Bovinos y Búfalos, tales como, nemátodos gastrointestinales, parásito pulmonar, piojos, ácaros de la sarna, garrapatas y miasis.\nAdministre solamente por vía Subcutánea, delante o detrás de la Paleta.\nNo administrar por vía Intramuscular o Endovenosa.\nInyectar 1 ml. por cada 50 k.p.v. (800 mcg de Ivermectina por k.p.v.) en Bovinos y Búfalos.\nLuego de la aplicación subcutánea puede producir un ligero malestar pasajero y/o inflamación en el sitio de la inyección. El efecto desaparece sin necesidad de tratamiento.\nAdvertencias:\nPeriodo de Restricción: Suspender el uso del producto a  42 días de la salida de los animales al sacrificio.\nAlmacenar en lugar fresco y al abrigo de la luz.\nManténgase fuera del alcance de los niños.\nVenta bajo prescripción del Médico Veterinario.",
-        "composition": [],
-        "indications": [
-            "Ivermectina al 4%, está indicado para el tratamiento y control de parásitos internos y externos de los Bovinos y Búfalos, tales como, nemátodos gastrointestinales, parásito pulmonar, piojos, ácaros de la sarna, garrapatas y miasis.",
-            "Administre solamente por vía Subcutánea, delante o detrás de la Paleta.",
-            "No administrar por vía Intramuscular o Endovenosa.",
-            "Inyectar 1 ml. por cada 50 k.p.v. (800 mcg de Ivermectina por k.p.v.) en Bovinos y Búfalos.",
-            "Luego de la aplicación subcutánea puede producir un ligero malestar pasajero y/o inflamación en el sitio de la inyección. El efecto desaparece sin necesidad de tratamiento."
-        ],
-        "warnings": [
-            "Periodo de Restricción: Suspender el uso del producto a  42 días de la salida de los animales al sacrificio.",
-            "Almacenar en lugar fresco y al abrigo de la luz.",
-            "Manténgase fuera del alcance de los niños.",
-            "Venta bajo prescripción del Médico Veterinario."
-        ],
-        "pdfPath": "/pdfs/ivermectina-al-4-100ml.pdf",
-        "originalUrl": "https://labrinsa.com/productos-jhesua/antiparasitario-inyectable/ivermectina-al-4-100ml/"
-    },
-    {
-        "id": 22,
-        "name": "Ivermectina Al 4 500ml 2",
-        "image": "/images/products/ivermectina-al-4-500ml-2.png",
-        "category": "Antiparasitario inyectable",
-        "description": "Ivermectina Al 4% – 500ML\nCada 100 ml contienen:\n\n\n\nIvermectina\n4 g\n\n\nExcipientes c.s.p\n100 ml\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIndicaciones:\nIvermectina al 4%, está indicado para el tratamiento y control de parásitos internos y externos de los Bovinos y Búfalos, tales como, nemátodos gastrointestinales, parásito pulmonar, piojos, ácaros de la sarna, garrapatas y miasis.\nAdministre solamente por vía Subcutánea, delante o detrás de la Paleta.\nNo administrar por vía Intramuscular o Endovenosa.\nInyectar 1 ml. por cada 50 k.p.v. (800 mcg de Ivermectina por k.p.v.) en Bovinos y Búfalos.\nLuego de la aplicación subcutánea puede producir un ligero malestar pasajero y/o inflamación en el sitio de la inyección. El efecto desaparece sin necesidad de tratamiento.\nAdvertencias:\nPeriodo de Restricción: Suspender el uso del producto a  42 días de la salida de los animales al sacrificio.\nAlmacenar en lugar fresco y al abrigo de la luz.\nManténgase fuera del alcance de los niños.\nVenta bajo prescripción del Médico Veterinario.",
-        "composition": [],
-        "indications": [
-            "Ivermectina al 4%, está indicado para el tratamiento y control de parásitos internos y externos de los Bovinos y Búfalos, tales como, nemátodos gastrointestinales, parásito pulmonar, piojos, ácaros de la sarna, garrapatas y miasis.",
-            "Administre solamente por vía Subcutánea, delante o detrás de la Paleta.",
-            "No administrar por vía Intramuscular o Endovenosa.",
-            "Inyectar 1 ml. por cada 50 k.p.v. (800 mcg de Ivermectina por k.p.v.) en Bovinos y Búfalos.",
-            "Luego de la aplicación subcutánea puede producir un ligero malestar pasajero y/o inflamación en el sitio de la inyección. El efecto desaparece sin necesidad de tratamiento."
-        ],
-        "warnings": [
-            "Periodo de Restricción: Suspender el uso del producto a  42 días de la salida de los animales al sacrificio.",
-            "Almacenar en lugar fresco y al abrigo de la luz.",
-            "Manténgase fuera del alcance de los niños.",
-            "Venta bajo prescripción del Médico Veterinario."
-        ],
-        "pdfPath": "/pdfs/ivermectina-al-4-500ml-2.pdf",
-        "originalUrl": "https://labrinsa.com/productos-jhesua/antiparasitario-inyectable/ivermectina-al-4-500ml-2/"
     },
     {
         "id": 23,
@@ -982,8 +994,62 @@ export const products = [
         "originalUrl": "https://labrinsa.com/productos-jhesua/antidiarreico-oral/kaobrin/"
     },
     {
+        "id": 56,
+        "name": "Kaobrin 250ml",
+        "image": "/images/products/kaobrin.jpg",
+        "category": "Antidiarreico oral",
+        "description": "Kaobrin 250 ML\nCada 100 ml contienen:\n\n\n\nSulfametoxazol\n2500 mg\n\n\nTrimetoprim\n500 mg\n\n\nSulfato de Neomicina\n725 mg\n\n\nCaolín Coloidal\n10000 mg\n\n\nCloruro de Sodio\n500 mg\n\n\nCloruro de Potasio\n200 mg\n\n\nExcipientes c.s.p\n100 ml\n\n\n\nIndicaciones:\nAntibacteriano de acción antidiarreica, indicado en casos de diarreas causadas por diversos factores: infecciones gastrointestinales, enteritis parasitarias, diarrea blanca de los terneros, gastroenteritis, intoxicaciones alimentarias, síndrome de mala absorción, enfermedades virales, entre otras.\n\nAgite bien antes de usar\nVía de Administración: Oral.\nBovinos y Equinos: 30 – 120 ml cada 12 horas.\nPorcinos, Ovinos y Caprinos: 10 – 30 ml cada 12 horas.\nCaninos y Felinos: 5 – 10 ml cada 12 horas.\nEsta dosis puede ser modificada por el Médico Veterinario.\nAdvertencias:\nPeriodo de Restricción: Suspender el uso del producto 15 días antes de la salida de los animales al sacrificio.\nAlmacenar en lugar fresco y al abrigo de la luz.\nManténgase fuera del alcance de los niños.\nVenta bajo prescripción del Médico Veterinario.",
+        "composition": [
+            {
+                "name": "Sulfametoxazol",
+                "quantity": "2500 mg"
+            },
+            {
+                "name": "Trimetoprim",
+                "quantity": "500 mg"
+            },
+            {
+                "name": "Sulfato de Neomicina",
+                "quantity": "725 mg"
+            },
+            {
+                "name": "Caolín Coloidal",
+                "quantity": "10000 mg"
+            },
+            {
+                "name": "Cloruro de Sodio",
+                "quantity": "500 mg"
+            },
+            {
+                "name": "Cloruro de Potasio",
+                "quantity": "200 mg"
+            },
+            {
+                "name": "Excipientes c.s.p.",
+                "quantity": "100 ml"
+            }
+        ],
+        "indications": [
+            "Antibacteriano de acción antidiarreica, indicado en casos de diarreas causadas por diversos factores: infecciones gastrointestinales, enteritis parasitarias, diarrea blanca de los terneros, gastroenteritis, intoxicaciones alimentarias, síndrome de mala absorción, enfermedades virales, entre otras.",
+            "Agite bien antes de usar",
+            "Vía de Administración: Oral.",
+            "Bovinos y Equinos: 30 – 120 ml cada 12 horas.",
+            "Porcinos, Ovinos y Caprinos: 10 – 30 ml cada 12 horas.",
+            "Caninos y Felinos: 5 – 10 ml cada 12 horas.",
+            "Esta dosis puede ser modificada por el Médico Veterinario."
+        ],
+        "warnings": [
+            "Periodo de Restricción: Suspender el uso del producto 15 días antes de la salida de los animales al sacrificio.",
+            "Almacenar en lugar fresco y al abrigo de la luz.",
+            "Manténgase fuera del alcance de los niños.",
+            "Venta bajo prescripción del Médico Veterinario."
+        ],
+        "pdfPath": "/pdfs/kaobrin.pdf",
+        "originalUrl": ""
+    },
+    {
         "id": 27,
-        "name": "Labricina",
+        "name": "Labricina 8g",
         "image": "/images/products/labricina.png",
         "category": "Antiparasitario inyectable",
         "description": "Labricina – 8 g\nCada gramo contiene:\n\n\n\nNeomicina Sulfato\n25,0 mg\n\n\nOxitetraciclina Clorhidrato\n20,0 mg\n\n\nBacitracina\n5,0 mg\n\n\nPrednisolona Acetato\n1,0 mg\n\n\nExcipientes c.s.p\n1,0 g\n\n\n\nIndicaciones:\nUsar en Bovinos y Búfalos.\nMastitis: Previo vaciado de la ubre, insértese la cánula en el pezón enfermo introduciendo todo el contenido de la jeringa de Labricina cada 12 horas por 3 días ó según criterio del Médico Veterinario.\nAdvertencias:\nNo debe usarse la leche del animal enfermo durante el tratamiento sino después de 72 horas consecutivas de la última aplicación de Labricina.\nAlmacenar en lugar fresco y al abrigo de la luz.\nManténgase fuera del alcance de los niños.\nVenta bajo prescripción del Médico Veterinario.",
@@ -1178,6 +1244,171 @@ export const products = [
         "originalUrl": "https://labrinsa.com/productos-jhesua/antiparasitario-inyectable/labrisol-500-ml-2/"
     },
     {
+        "id": 51,
+        "name": "LABRIVEC 2-4,5 Kg",
+        "image": "/images/products/labrivec-2-4-5kg.jpg",
+        "category": "Antiparasitario oral",
+        "description": "Labrivec para perros es una tableta indicada como antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses. Para perros más de 2 a 4,5 kg de peso, tableta de 292,5 mg equivalente a 112,5 mg de Fluralaner.",
+        "composition": [
+            {
+                "name": "Fluralaner",
+                "quantity": "384,6 mg / 1000 mg (112,5 mg por tableta)"
+            },
+            {
+                "name": "Excipientes c.s.p.",
+                "quantity": "1000 mg"
+            }
+        ],
+        "indications": [
+            "Antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses.",
+            "Para perros de más de 2 a 4,5 kg de peso."
+        ],
+        "dosage": "1 tableta de 292,5 mg (112,5 mg de Fluralaner) cada 3 meses.",
+        "administration": "Vía Oral",
+        "presentation": "Contenido neto: 1 tableta de 292,5 mg (CPE0925597193)",
+        "warnings": [
+            "Manténgase fuera del alcance de los niños.",
+            "Almacenar en un lugar fresco y al abrigo de la luz.",
+            "Venta bajo prescripción del Médico Veterinario.",
+            "En caso de reacción consulte de inmediato con el Médico Veterinario.",
+            "No administrar a cachorros menores de 2 meses de edad y a perros menor de 2 kg de peso."
+        ],
+        "pdfPath": "/pdfs/labrivec-2-4-5kg.pdf",
+        "originalUrl": ""
+    },
+    {
+        "id": 52,
+        "name": "LABRIVEC 4,5-10 Kg",
+        "image": "/images/products/labrivec-4-5-10kg.jpg",
+        "category": "Antiparasitario oral",
+        "description": "Labrivec para perros es una tableta indicada como antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses. Para perros más de 4,5 a 10 kg de peso, tableta de 650 mg equivalente a 250 mg de Fluralaner.",
+        "composition": [
+            {
+                "name": "Fluralaner",
+                "quantity": "384,6 mg / 1000 mg (250 mg por tableta)"
+            },
+            {
+                "name": "Excipientes c.s.p.",
+                "quantity": "1000 mg"
+            }
+        ],
+        "indications": [
+            "Antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses.",
+            "Para perros de más de 4,5 a 10 kg de peso."
+        ],
+        "dosage": "1 tableta de 650 mg (250 mg de Fluralaner) cada 3 meses.",
+        "administration": "Vía Oral",
+        "presentation": "Contenido neto: 1 tableta de 650 mg (CPE0925597190)",
+        "warnings": [
+            "Manténgase fuera del alcance de los niños.",
+            "Almacenar en un lugar fresco y al abrigo de la luz.",
+            "Venta bajo prescripción del Médico Veterinario.",
+            "En caso de reacción consulte de inmediato con el Médico Veterinario.",
+            "No administrar a cachorros menores de 2 meses de edad y a perros menor de 2 kg de peso."
+        ],
+        "pdfPath": "/pdfs/labrivec-4-5-10kg.pdf",
+        "originalUrl": ""
+    },
+    {
+        "id": 53,
+        "name": "LABRIVEC 10-20 Kg",
+        "image": "/images/products/labrivec-10-20kg.jpg",
+        "category": "Antiparasitario oral",
+        "description": "Labrivec para perros es una tableta indicada como antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses. Para perros más de 10 a 20 kg de peso, tableta de 1,3 g equivalente a 500 mg de Fluralaner.",
+        "composition": [
+            {
+                "name": "Fluralaner",
+                "quantity": "384,6 mg / 1000 mg (500 mg por tableta)"
+            },
+            {
+                "name": "Excipientes c.s.p.",
+                "quantity": "1000 mg"
+            }
+        ],
+        "indications": [
+            "Antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses.",
+            "Para perros de más de 10 a 20 kg de peso."
+        ],
+        "dosage": "1 tableta de 1,3 g (500 mg de Fluralaner) cada 3 meses.",
+        "administration": "Vía Oral",
+        "presentation": "Contenido neto: 1 tableta de 1,3 g (CPE0925597194)",
+        "warnings": [
+            "Manténgase fuera del alcance de los niños.",
+            "Almacenar en un lugar fresco y al abrigo de la luz.",
+            "Venta bajo prescripción del Médico Veterinario.",
+            "En caso de reacción consulte de inmediato con el Médico Veterinario.",
+            "No administrar a cachorros menores de 2 meses de edad y a perros menor de 2 kg de peso."
+        ],
+        "pdfPath": "/pdfs/labrivec-10-20kg.pdf",
+        "originalUrl": ""
+    },
+    {
+        "id": 54,
+        "name": "LABRIVEC 20-40 Kg",
+        "image": "/images/products/labrivec-20-40kg.jpg",
+        "category": "Antiparasitario oral",
+        "description": "Labrivec para perros es una tableta indicada como antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses. Para perros más de 20 a 40 kg de peso, tableta de 2,6 g equivalente a 1000 mg de Fluralaner.",
+        "composition": [
+            {
+                "name": "Fluralaner",
+                "quantity": "384,6 mg / 1000 mg (1000 mg por tableta)"
+            },
+            {
+                "name": "Excipientes c.s.p.",
+                "quantity": "1000 mg"
+            }
+        ],
+        "indications": [
+            "Antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses.",
+            "Para perros de más de 20 a 40 kg de peso."
+        ],
+        "dosage": "1 tableta de 2,6 g (1000 mg de Fluralaner) cada 3 meses.",
+        "administration": "Vía Oral",
+        "presentation": "Contenido neto: 1 tableta de 2,6 g (CPE0925597191)",
+        "warnings": [
+            "Manténgase fuera del alcance de los niños.",
+            "Almacenar en un lugar fresco y al abrigo de la luz.",
+            "Venta bajo prescripción del Médico Veterinario.",
+            "En caso de reacción consulte de inmediato con el Médico Veterinario.",
+            "No administrar a cachorros menores de 2 meses de edad y a perros menor de 2 kg de peso."
+        ],
+        "pdfPath": "/pdfs/labrivec-20-40kg.pdf",
+        "originalUrl": ""
+    },
+    {
+        "id": 55,
+        "name": "LABRIVEC 40-56 Kg",
+        "image": "/images/products/labrivec-40-56kg.jpg",
+        "category": "Antiparasitario oral",
+        "description": "Labrivec para perros es una tableta indicada como antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses. Para perros más de 40 a 56 kg de peso, tableta de 3,64 g equivalente a 1400 mg de Fluralaner.",
+        "composition": [
+            {
+                "name": "Fluralaner",
+                "quantity": "384,6 mg / 1000 mg (1400 mg por tableta)"
+            },
+            {
+                "name": "Excipientes c.s.p.",
+                "quantity": "1000 mg"
+            }
+        ],
+        "indications": [
+            "Antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses.",
+            "Para perros de más de 40 a 56 kg de peso."
+        ],
+        "dosage": "1 tableta de 3,64 g (1400 mg de Fluralaner) cada 3 meses.",
+        "administration": "Vía Oral",
+        "presentation": "Contenido neto: 1 tableta de 3,64 g (CPE0925597192)",
+        "warnings": [
+            "Manténgase fuera del alcance de los niños.",
+            "Almacenar en un lugar fresco y al abrigo de la luz.",
+            "Venta bajo prescripción del Médico Veterinario.",
+            "En caso de reacción consulte de inmediato con el Médico Veterinario.",
+            "No administrar a cachorros menores de 2 meses de edad y a perros menor de 2 kg de peso."
+        ],
+        "pdfPath": "/pdfs/labrivec-40-56kg.pdf",
+        "originalUrl": ""
+    },
+    {
         "id": 33,
         "name": "Mastibrin 8g",
         "image": "/images/products/mastibrin-8g.jpg",
@@ -1313,6 +1544,41 @@ export const products = [
         ],
         "pdfPath": "/pdfs/modibrin-500ml.pdf",
         "originalUrl": "https://labrinsa.com/productos-jhesua/vitamina-inyectable/modibrin-500ml/"
+    },
+    {
+        "id": 50,
+        "name": "OTIBRIN",
+        "image": "/images/products/otibrin.png",
+        "category": "Solución Ótica",
+        "description": "Otibrin está indicado para el tratamiento de la otitis externa causada por infecciones de bacterias sensibles al Florfenicol y hongos sensibles a la Terbinafina.",
+        "composition": [
+            {
+                "name": "Florfenicol",
+                "quantity": "16.7 mg"
+            },
+            {
+                "name": "Terbinafina HCl",
+                "quantity": "16.7 mg"
+            },
+            {
+                "name": "Prednisolona Acetato",
+                "quantity": "2.2 mg"
+            }
+        ],
+        "indications": [
+            "Tratamiento de la otitis externa causada por infecciones de bacterias sensibles al Florfenicol y hongos sensibles a la Terbinafina."
+        ],
+        "dosage": "Aplicar vía Otica 1 ml en cada oído y repetir la aplicación a los 7 días a criterio del Médico Veterinario.",
+        "administration": "Vía Ótica",
+        "presentation": "Caja que contiene 2 unidades",
+        "package": "25 cajas (50 unidades en total)",
+        "warnings": [
+            "Almacenar en lugar fresco y al abrigo de la luz.",
+            "Manténgase fuera del alcance de los niños.",
+            "Venta bajo prescripción del Médico Veterinario."
+        ],
+        "pdfPath": "/pdfs/otibrin.pdf",
+        "originalUrl": ""
     },
     {
         "id": 35,
@@ -1816,294 +2082,5 @@ export const products = [
         ],
         "pdfPath": "/pdfs/yoduro-de-sodio-al-24-100ml.pdf",
         "originalUrl": "https://labrinsa.com/productos-jhesua/antiseptico-inyectable/yoduro-de-sodio-al-24-100ml/"
-    },
-    {
-        "id": 49,
-        "name": "BOVISTREP Inyectable",
-        "image": "/images/products/bovistrep-inyectable.png",
-        "category": "Antibiótico inyectable",
-        "description": "Cada ML contiene:\nFlorfenicol 200 mg\nTilosina Tartrato 220 mg\nBromhexina HCl 5 MG\n\nIndicaciones:\nCombinacion antibiótica para el tratamiento de enfermedades respiratorias producidas por bacterias sensibles al Florfenicol y a la Tilosina con efecto expectorante broncopulmonar y mucolitico.\n\nIndicado en casos de neumonías, pleuroneumonia, pasteurelosis, bronquitis, traqueobronquitis, neumonía enzootica y rinitis atrofica.\n\nDosis: Bovinos, bufalinos y porcinos: 1 ml por cada 20 Kg de peso vivo. Repetir la aplicación a las 48 horas o según criterio del médico veterinario.\n\nVia de administración: Intramuscular profunda. No administrar más de 20 ml por punto de inyección.\n\nEmpaque: 28 unidades",
-        "composition": [
-            {
-                "name": "Florfenicol",
-                "quantity": "200 mg"
-            },
-            {
-                "name": "Tilosina Tartrato",
-                "quantity": "220 mg"
-            },
-            {
-                "name": "Bromhexina HCl",
-                "quantity": "5 MG"
-            }
-        ],
-        "indications": [
-            "Combinacion antibiótica para el tratamiento de enfermedades respiratorias producidas por bacterias sensibles al Florfenicol y a la Tilosina con efecto expectorante broncopulmonar y mucolitico.",
-            "Indicado en casos de neumonías, pleuroneumonia, pasteurelosis, bronquitis, traqueobronquitis, neumonía enzootica y rinitis atrofica."
-        ],
-        "dosage": "Bovinos, bufalinos y porcinos: 1 ml por cada 20 Kg de peso vivo. Repetir la aplicación a las 48 horas o según criterio del médico veterinario.",
-        "administration": "Intramuscular profunda. No administrar más de 20 ml por punto de inyección.",
-        "package": "28 unidades",
-        "warnings": [
-            "Almacenar en lugar fresco y al abrigo de la luz.",
-            "Manténgase fuera del alcance de los niños.",
-            "Venta bajo prescripción del Médico Veterinario."
-        ],
-        "pdfPath": "/pdfs/bovistrep-inyectable.pdf",
-        "originalUrl": ""
-    },
-    {
-        "id": 50,
-        "name": "OTIBRIN",
-        "image": "/images/products/otibrin.png",
-        "category": "Solución Ótica",
-        "description": "Otibrin está indicado para el tratamiento de la otitis externa causada por infecciones de bacterias sensibles al Florfenicol y hongos sensibles a la Terbinafina.",
-        "composition": [
-            {
-                "name": "Florfenicol",
-                "quantity": "16.7 mg"
-            },
-            {
-                "name": "Terbinafina HCl",
-                "quantity": "16.7 mg"
-            },
-            {
-                "name": "Prednisolona Acetato",
-                "quantity": "2.2 mg"
-            }
-        ],
-        "indications": [
-            "Tratamiento de la otitis externa causada por infecciones de bacterias sensibles al Florfenicol y hongos sensibles a la Terbinafina."
-        ],
-        "dosage": "Aplicar vía Otica 1 ml en cada oído y repetir la aplicación a los 7 días a criterio del Médico Veterinario.",
-        "administration": "Vía Ótica",
-        "presentation": "Caja que contiene 2 unidades",
-        "package": "25 cajas (50 unidades en total)",
-        "warnings": [
-            "Almacenar en lugar fresco y al abrigo de la luz.",
-            "Manténgase fuera del alcance de los niños.",
-            "Venta bajo prescripción del Médico Veterinario."
-        ],
-        "pdfPath": "/pdfs/otibrin.pdf",
-        "originalUrl": ""
-    },
-    {
-        "id": 51,
-        "name": "LABRIVEC 2-4,5 Kg",
-        "image": "/images/products/labrivec-2-4-5kg.jpg",
-        "category": "Antiparasitario oral",
-        "description": "Labrivec para perros es una tableta indicada como antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses. Para perros más de 2 a 4,5 kg de peso, tableta de 292,5 mg equivalente a 112,5 mg de Fluralaner.",
-        "composition": [
-            {
-                "name": "Fluralaner",
-                "quantity": "384,6 mg / 1000 mg (112,5 mg por tableta)"
-            },
-            {
-                "name": "Excipientes c.s.p.",
-                "quantity": "1000 mg"
-            }
-        ],
-        "indications": [
-            "Antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses.",
-            "Para perros de más de 2 a 4,5 kg de peso."
-        ],
-        "dosage": "1 tableta de 292,5 mg (112,5 mg de Fluralaner) cada 3 meses.",
-        "administration": "Vía Oral",
-        "presentation": "Contenido neto: 1 tableta de 292,5 mg (CPE0925597193)",
-        "warnings": [
-            "Manténgase fuera del alcance de los niños.",
-            "Almacenar en un lugar fresco y al abrigo de la luz.",
-            "Venta bajo prescripción del Médico Veterinario.",
-            "En caso de reacción consulte de inmediato con el Médico Veterinario.",
-            "No administrar a cachorros menores de 2 meses de edad y a perros menor de 2 kg de peso."
-        ],
-        "pdfPath": "/pdfs/labrivec-2-4-5kg.pdf",
-        "originalUrl": ""
-    },
-    {
-        "id": 52,
-        "name": "LABRIVEC 4,5-10 Kg",
-        "image": "/images/products/labrivec-4-5-10kg.jpg",
-        "category": "Antiparasitario oral",
-        "description": "Labrivec para perros es una tableta indicada como antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses. Para perros más de 4,5 a 10 kg de peso, tableta de 650 mg equivalente a 250 mg de Fluralaner.",
-        "composition": [
-            {
-                "name": "Fluralaner",
-                "quantity": "384,6 mg / 1000 mg (250 mg por tableta)"
-            },
-            {
-                "name": "Excipientes c.s.p.",
-                "quantity": "1000 mg"
-            }
-        ],
-        "indications": [
-            "Antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses.",
-            "Para perros de más de 4,5 a 10 kg de peso."
-        ],
-        "dosage": "1 tableta de 650 mg (250 mg de Fluralaner) cada 3 meses.",
-        "administration": "Vía Oral",
-        "presentation": "Contenido neto: 1 tableta de 650 mg (CPE0925597190)",
-        "warnings": [
-            "Manténgase fuera del alcance de los niños.",
-            "Almacenar en un lugar fresco y al abrigo de la luz.",
-            "Venta bajo prescripción del Médico Veterinario.",
-            "En caso de reacción consulte de inmediato con el Médico Veterinario.",
-            "No administrar a cachorros menores de 2 meses de edad y a perros menor de 2 kg de peso."
-        ],
-        "pdfPath": "/pdfs/labrivec-4-5-10kg.pdf",
-        "originalUrl": ""
-    },
-    {
-        "id": 53,
-        "name": "LABRIVEC 10-20 Kg",
-        "image": "/images/products/labrivec-10-20kg.jpg",
-        "category": "Antiparasitario oral",
-        "description": "Labrivec para perros es una tableta indicada como antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses. Para perros más de 10 a 20 kg de peso, tableta de 1,3 g equivalente a 500 mg de Fluralaner.",
-        "composition": [
-            {
-                "name": "Fluralaner",
-                "quantity": "384,6 mg / 1000 mg (500 mg por tableta)"
-            },
-            {
-                "name": "Excipientes c.s.p.",
-                "quantity": "1000 mg"
-            }
-        ],
-        "indications": [
-            "Antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses.",
-            "Para perros de más de 10 a 20 kg de peso."
-        ],
-        "dosage": "1 tableta de 1,3 g (500 mg de Fluralaner) cada 3 meses.",
-        "administration": "Vía Oral",
-        "presentation": "Contenido neto: 1 tableta de 1,3 g (CPE0925597194)",
-        "warnings": [
-            "Manténgase fuera del alcance de los niños.",
-            "Almacenar en un lugar fresco y al abrigo de la luz.",
-            "Venta bajo prescripción del Médico Veterinario.",
-            "En caso de reacción consulte de inmediato con el Médico Veterinario.",
-            "No administrar a cachorros menores de 2 meses de edad y a perros menor de 2 kg de peso."
-        ],
-        "pdfPath": "/pdfs/labrivec-10-20kg.pdf",
-        "originalUrl": ""
-    },
-    {
-        "id": 54,
-        "name": "LABRIVEC 20-40 Kg",
-        "image": "/images/products/labrivec-20-40kg.jpg",
-        "category": "Antiparasitario oral",
-        "description": "Labrivec para perros es una tableta indicada como antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses. Para perros más de 20 a 40 kg de peso, tableta de 2,6 g equivalente a 1000 mg de Fluralaner.",
-        "composition": [
-            {
-                "name": "Fluralaner",
-                "quantity": "384,6 mg / 1000 mg (1000 mg por tableta)"
-            },
-            {
-                "name": "Excipientes c.s.p.",
-                "quantity": "1000 mg"
-            }
-        ],
-        "indications": [
-            "Antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses.",
-            "Para perros de más de 20 a 40 kg de peso."
-        ],
-        "dosage": "1 tableta de 2,6 g (1000 mg de Fluralaner) cada 3 meses.",
-        "administration": "Vía Oral",
-        "presentation": "Contenido neto: 1 tableta de 2,6 g (CPE0925597191)",
-        "warnings": [
-            "Manténgase fuera del alcance de los niños.",
-            "Almacenar en un lugar fresco y al abrigo de la luz.",
-            "Venta bajo prescripción del Médico Veterinario.",
-            "En caso de reacción consulte de inmediato con el Médico Veterinario.",
-            "No administrar a cachorros menores de 2 meses de edad y a perros menor de 2 kg de peso."
-        ],
-        "pdfPath": "/pdfs/labrivec-20-40kg.pdf",
-        "originalUrl": ""
-    },
-    {
-        "id": 55,
-        "name": "LABRIVEC 40-56 Kg",
-        "image": "/images/products/labrivec-40-56kg.jpg",
-        "category": "Antiparasitario oral",
-        "description": "Labrivec para perros es una tableta indicada como antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses. Para perros más de 40 a 56 kg de peso, tableta de 3,64 g equivalente a 1400 mg de Fluralaner.",
-        "composition": [
-            {
-                "name": "Fluralaner",
-                "quantity": "384,6 mg / 1000 mg (1400 mg por tableta)"
-            },
-            {
-                "name": "Excipientes c.s.p.",
-                "quantity": "1000 mg"
-            }
-        ],
-        "indications": [
-            "Antiparasitario externo especial para la prevención, control y tratamiento de pulgas, garrapatas y ácaros que infestan a los caninos con acción prolongada de 3 meses.",
-            "Para perros de más de 40 a 56 kg de peso."
-        ],
-        "dosage": "1 tableta de 3,64 g (1400 mg de Fluralaner) cada 3 meses.",
-        "administration": "Vía Oral",
-        "presentation": "Contenido neto: 1 tableta de 3,64 g (CPE0925597192)",
-        "warnings": [
-            "Manténgase fuera del alcance de los niños.",
-            "Almacenar en un lugar fresco y al abrigo de la luz.",
-            "Venta bajo prescripción del Médico Veterinario.",
-            "En caso de reacción consulte de inmediato con el Médico Veterinario.",
-            "No administrar a cachorros menores de 2 meses de edad y a perros menor de 2 kg de peso."
-        ],
-        "pdfPath": "/pdfs/labrivec-40-56kg.pdf",
-        "originalUrl": ""
-    },
-    {
-        "id": 56,
-        "name": "Kaobrin 250ml",
-        "image": "/images/products/kaobrin.jpg",
-        "category": "Antidiarreico oral",
-        "description": "Kaobrin 250 ML\nCada 100 ml contienen:\n\n\n\nSulfametoxazol\n2500 mg\n\n\nTrimetoprim\n500 mg\n\n\nSulfato de Neomicina\n725 mg\n\n\nCaolín Coloidal\n10000 mg\n\n\nCloruro de Sodio\n500 mg\n\n\nCloruro de Potasio\n200 mg\n\n\nExcipientes c.s.p\n100 ml\n\n\n\nIndicaciones:\nAntibacteriano de acción antidiarreica, indicado en casos de diarreas causadas por diversos factores: infecciones gastrointestinales, enteritis parasitarias, diarrea blanca de los terneros, gastroenteritis, intoxicaciones alimentarias, síndrome de mala absorción, enfermedades virales, entre otras.\n\nAgite bien antes de usar\nVía de Administración: Oral.\nBovinos y Equinos: 30 – 120 ml cada 12 horas.\nPorcinos, Ovinos y Caprinos: 10 – 30 ml cada 12 horas.\nCaninos y Felinos: 5 – 10 ml cada 12 horas.\nEsta dosis puede ser modificada por el Médico Veterinario.\nAdvertencias:\nPeriodo de Restricción: Suspender el uso del producto 15 días antes de la salida de los animales al sacrificio.\nAlmacenar en lugar fresco y al abrigo de la luz.\nManténgase fuera del alcance de los niños.\nVenta bajo prescripción del Médico Veterinario.",
-        "composition": [
-            {
-                "name": "Sulfametoxazol",
-                "quantity": "2500 mg"
-            },
-            {
-                "name": "Trimetoprim",
-                "quantity": "500 mg"
-            },
-            {
-                "name": "Sulfato de Neomicina",
-                "quantity": "725 mg"
-            },
-            {
-                "name": "Caolín Coloidal",
-                "quantity": "10000 mg"
-            },
-            {
-                "name": "Cloruro de Sodio",
-                "quantity": "500 mg"
-            },
-            {
-                "name": "Cloruro de Potasio",
-                "quantity": "200 mg"
-            },
-            {
-                "name": "Excipientes c.s.p.",
-                "quantity": "100 ml"
-            }
-        ],
-        "indications": [
-            "Antibacteriano de acción antidiarreica, indicado en casos de diarreas causadas por diversos factores: infecciones gastrointestinales, enteritis parasitarias, diarrea blanca de los terneros, gastroenteritis, intoxicaciones alimentarias, síndrome de mala absorción, enfermedades virales, entre otras.",
-            "Agite bien antes de usar",
-            "Vía de Administración: Oral.",
-            "Bovinos y Equinos: 30 – 120 ml cada 12 horas.",
-            "Porcinos, Ovinos y Caprinos: 10 – 30 ml cada 12 horas.",
-            "Caninos y Felinos: 5 – 10 ml cada 12 horas.",
-            "Esta dosis puede ser modificada por el Médico Veterinario."
-        ],
-        "warnings": [
-            "Periodo de Restricción: Suspender el uso del producto 15 días antes de la salida de los animales al sacrificio.",
-            "Almacenar en lugar fresco y al abrigo de la luz.",
-            "Manténgase fuera del alcance de los niños.",
-            "Venta bajo prescripción del Médico Veterinario."
-        ],
-        "pdfPath": "/pdfs/kaobrin.pdf",
-        "originalUrl": ""
     }
 ];

@@ -28,12 +28,14 @@ const ProductsPage = () => {
         setCurrentPage(1);
     }, [selectedCategory, searchQuery]);
 
-    const filteredProducts = products.filter(product => {
-        const matchesCategory = selectedCategory ? product.category === selectedCategory : true;
-        const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            product.category.toLowerCase().includes(searchQuery.toLowerCase());
-        return matchesCategory && matchesSearch;
-    });
+    const filteredProducts = products
+        .filter(product => {
+            const matchesCategory = selectedCategory ? product.category === selectedCategory : true;
+            const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                product.category.toLowerCase().includes(searchQuery.toLowerCase());
+            return matchesCategory && matchesSearch;
+        })
+        .sort((a, b) => a.name.localeCompare(b.name, 'es', { sensitivity: 'base', numeric: true }));
 
 
     const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
